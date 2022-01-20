@@ -11,8 +11,13 @@ body {
 }
 
 /*Variável*/
-$primary-color: #fff;
-$primary-background: #101010;
+$site-bg: #fff;
+
+$primary-color: #507764;
+$primary-bg: linear-gradient(90deg, #446058, #507764);
+
+$second-color: #fab519;
+$second-bg: #fab519;
 
 $font-paragraph: "Montserrat", sans-serif;
 $size-paragraph: 14px;
@@ -24,23 +29,26 @@ $color-title: #fff;
 
 $color-link: #fff;
 
-$color-active: blue;
+$color-active: #fff;
 
 $color-placeholder: orange;
 
-$scroll-color-bg: black;
-$scroll-color-bg-thumb: red;
-$scroll-color-border: blue;
+$scroll-color-bg: linear-gradient(90deg, #446058, #507764);;
+$scroll-color-bg-thumb: #fab519;
+$scroll-color-border: #fab519;
 
 $preloader-color-bg: white;
-$preloader-color-bg-loading: black;
+$preloader-color-bg-loading: #fab519;
+
+
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 13h22M4 19h22'/%3e%3c/svg%3e") !important;
 
 
 /*Theme*/
 body {
     font-size: 100%;
     color: $primary-color;
-    background-color: $primary-background;
+    background-color: $site-bg;
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
@@ -48,6 +56,7 @@ body {
 
 a {
     color: $color-link;
+    text-decoration: none;
 }
 
 .nav-item.scroll.active a {
@@ -177,4 +186,85 @@ footer {
 }
 
 
-    
+/*Nav*/
+.bg-header.active {
+    background: $primary-bg;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.55);
+    border-color: rgba(255,255,255,0);
+}
+
+.navbar-toggler-icon {
+    background-image: $navbar-dark-toggler-icon-bg;
+}
+
+.navbar-toggler-icon {
+    width: 2.5em;
+    height: 1.5em;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-right {
+    width: 20%;
+    max-width: 250px;
+}
+
+.navbar-right {
+    text-align: right;
+}
+
+.navbar-right a.link {
+    border: 1px solid $second-color;
+    border-radius: 10px 0px 10px 0px;
+    padding: .3rem .8rem;
+
+    &:hover {
+        background: $primary-color;
+        color: $second-color;
+    }
+}
+
+li.nav-item {
+    text-align: center;
+}
+
+li.nav-item .dropdown-item {
+    text-align: center;
+}
+
+
+/*Carousel*/
+.owl-carousel.owl-banner .container {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 55vw;
+    text-align: left;
+}
+
+#section-form {
+    position: relative;
+    z-index: 99;
+    margin-top: -5.7rem;
+}

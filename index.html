@@ -4,7 +4,7 @@
     <!-- META TAGS GOOGLE -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Site Template</title>    
+    <title>Nacional Transportes</title>    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Front-end: Everton Paixão"/>
     <meta name="description" content=""/>
@@ -36,12 +36,13 @@
     <link rel="stylesheet" href="library/owlcarousel/assets/owl.theme.default.min.css">    
 
     <!-- Theme Site CSS -->
+    <link rel="stylesheet" href="https://nacionalgo.com.br/html/codigo/styles/form-cotacao.css">
     <link rel="stylesheet" href="styles/theme.css">
 
 </head>
 <body>
 
-    <h1 style="display: none;">Título da página do site</h1>    
+    <h1 style="display: none;">Nacional Transportes</h1>    
 
     <!-- Preloader -->
     <div id="preloader">
@@ -58,25 +59,36 @@
     <header id="header">
 
         <!-- Nav -->
-        <nav class="navbar navbar-dark bg-transparente">
+        <nav class="navbar navbar-dark bg-header">
             <div class="container">
-                <a class="navbar-brand" href="#">Logomarca</a>
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="images/logo-nacional-transportes.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="navbar-right">
-                    <a href="">Link</a>
+                    <a class="link" href="">Cotação Online</a>
                 </div>
         
                 <div class="collapse navbar-collapse" id="navbarsExample01">
                     <ul class="navbar-nav me-auto mb-2">
-                        <li class="nav-item scroll"><a class="nav-link" aria-current="page" href="#home">Home</a></li>
-                        <li class="nav-item scroll"><a class="nav-link" href="#section-01">Link 01</a></li>
-                        <li class="nav-item scroll"><a class="nav-link" href="#section-02">Link 02</a></li>
-                        <li class="nav-item scroll"><a class="nav-link" href="#section-03">Link 03</a></li>
-                        <li class="nav-item scroll"><a class="nav-link" href="#section-04">Link 04</a></li>
-                        <li class="nav-item scroll"><a class="nav-link" href="#section-05">Link 05</a></li>
+                        <!--li class="nav-item scroll"><a class="nav-link" aria-current="page" href="#home">Home</a></li-->
+                        <li class="nav-item scroll"><a class="nav-link" href="">Empresa</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                              <li><a class="dropdown-item" href="#">Transporte de Veículos</a></li>
+                              <li><a class="dropdown-item" href="#">Transporte de Motos</a></li>
+                              <li><a class="dropdown-item" href="#">Transporte Porta-a-Porta</a></li>
+                              <li><a class="dropdown-item" href="#">Transporte com Sider</a></li>
+                              <li><a class="dropdown-item" href="#">Transporte Aéreo de Veículos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item scroll"><a class="nav-link" href="">Transportes</a></li>
+                        <li class="nav-item scroll"><a class="nav-link" href="">Dúvidas</a></li>
+                        <li class="nav-item scroll"><a class="nav-link" href="">Qualidade</a></li>
+                        <li class="nav-item scroll"><a class="nav-link" href="">Blog</a></li>
+                        <li class="nav-item scroll"><a class="nav-link" href="">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -86,13 +98,278 @@
     </header>
     <!--/ Header -->
 
+    <!-- Banner -->
     <div id="home" class="scroll">
         <div class="owl-carousel owl-banner owl-theme">
             <div class="item">
-                <svg class="bd-placeholder-img" width="100%" height="650px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#000"></rect></svg>
+                <img class="img-fluid" src="images/banner.jpg" alt="">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                      <h2 class="title-banner">Transformamos o<br>jeito de transportar<br>veículos</h2>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>
+    <!--/ Banner -->
+
+    <!-- Form -->
+    <section id="section-form">
+        <form id="box-form-cotacao" autocomplete="off">
+            <h1 class="title">Cotação Online</h1>
+            
+            <div class="box-flex">
+            <h2><span>1. </span>Dados de Contato</h2>
+            <div class="label-float w33">
+            <label>Nome Completo</label>
+            <input type="text" name="nomecompleto" id="nomecompleto" placeholder="Nome Completo" required />
+            </div>
+            <div class="label-float w33">
+            <label>Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required />
+            </div>
+            <div class="label-float w33">
+            <label>Telefone</label>
+            <input type="text" id="tel" name="telefone" placeholder="Telefone" required />
+            </div>
+            </div>
+            
+            <div class="box-flex">
+            <h2><span>2. </span>Dados do Veículo</h2>
+            <div class="label-float w24">
+            <label>Tipo de veículo</label>
+            <select name="tipotransporte" id="tipotransporte" required onChange="if (!window.__cfRLUnblockHandlers) return false; editarTipoDeVeiculo();" data-cf-modified-21628119a432dbfdcce7d55b-="">
+            <option value="">Tipo de veículo</option>
+            <option value="Carro">Carro</option>
+            <option value="Moto">Moto</option>
+            <option value="Outro">Outro</option>
+            </select>
+            </div>
+            
+            <section id="opcaoCarro" class="box-opcoes-tipo-de-veiculo" style="display: none">
+            <div class="label-float w33">
+            <label>Marca</label>
+            <input type="text" list="marcaveiculo" id="veiculomarcaValidacao" placeholder="Marca do veiculo" />
+            <datalist id="marcaveiculo" name="veiculomarca" required>
+            <option data-value="AC CARS">AC_CARS</option>
+            <option data-value="ALFA_ROMEU">ALFA_ROMEU</option>
+            <option data-value="ASTON_MARTIN">ASTON_MARTIN</option>
+            <option data-value="AUDI">AUDI</option>
+            <option data-value="BABY">BABY</option>
+            <option data-value="BENTLEY">BENTLEY</option>
+            <option data-value="BMW">BMW</option>
+            <option data-value="BRILLIANCE">BRILLIANCE</option>
+            <option data-value="BUICK_MOTOR_C">BUICK_MOTOR_C.</option>
+            <option data-value="CADILLAC">CADILLAC</option>
+            <option data-value="CHANA">CHANA</option>
+            <option data-value="CHANGAN">CHANGAN</option>
+            <option data-value="CHERY">CHERY</option>
+            <option data-value="CHEVROLET">CHEVROLET</option>
+            <option data-value="CHRYSLER">CHRYSLER</option>
+            <option data-value="CITROEN">CITROEN</option>
+            <option data-value="DAEWOO">DAEWOO</option>
+            <option data-value="DAIHATSU">DAIHATSU</option>
+            <option data-value="DIVERSOS">DIVERSOS</option>
+            <option data-value="DODGE">DODGE</option>
+            <option data-value="EFFA">EFFA</option>
+            <option data-value="ENGESA">ENGESA</option>
+            <option data-value="ENVEMO">ENVEMO</option>
+            <option data-value="FARUS">FARUS</option>
+            <option data-value="FERRARI">FERRARI</option>
+            <option data-value="FIAT">FIAT</option>
+            <option data-value="FORD">FORD</option>
+            <option data-value="GURGEL">GURGEL</option>
+            <option data-value="HAFEI">HAFEI</option>
+            <option data-value="HONDA">HONDA</option>
+            <option data-value="HUMMER">HUMMER</option>
+            <option data-value="HYUNDAI">HYUNDAI</option>
+            <option data-value="INFINITI">INFINITI</option>
+            <option data-value="JAC">JAC</option>
+            <option data-value="JAGUAR">JAGUAR</option>
+            <option data-value="JEEP">JEEP</option>
+            <option data-value="JINBEI">JINBEI</option>
+            <option data-value="JPX">JPX</option>
+            <option data-value="KIA">KIA</option>
+            <option data-value="LADA">LADA</option>
+            <option data-value="LAFER">LAFER</option>
+            <option data-value="LAMBORGHINI">LAMBORGHINI</option>
+            <option data-value="LAND_ROVER">LAND_ROVER</option>
+            <option data-value="LEXUS">LEXUS</option>
+            <option data-value="LIFAN">LIFAN</option>
+            <option data-value="LINCOLN">LINCOLN</option>
+            <option data-value="LOBINI">LOBINI</option>
+            <option data-value="LOTUS">LOTUS</option>
+            <option data-value="MASERATI">MASERATI</option>
+            <option data-value="MASERATTI">MASERATTI</option>
+            <option data-value="MAZDA">MAZDA</option>
+            <option data-value="MERCEDES_BENZ">MERCEDES_BENZ</option>
+            <option data-value="MINI">MINI</option>
+            <option data-value="MITSUBISHI">MITSUBISHI</option>
+            <option data-value="MIURA">MIURA</option>
+            <option data-value="NISSAN">NISSAN</option>
+            <option data-value="OLDSMOBILE">OLDSMOBILE</option>
+            <option data-value="OPEL">OPEL</option>
+            <option data-value="PAGANI">PAGANI</option>
+            <option data-value="PEUGEOT">PEUGEOT</option>
+            <option data-value="PONTIAC">PONTIAC</option>
+            <option data-value="PORSCHE">PORSCHE</option>
+            <option data-value="PUMA">PUMA</option>
+            <option data-value="RENAULT">RENAULT</option>
+            <option data-value="ROLLS_ROYCE">ROLLS_ROYCE</option>
+            <option data-value="SANTA_MATILDE">SANTA_MATILDE</option>
+            <option data-value="SEAT">SEAT</option>
+            <option data-value="SMART">SMART</option>
+            <option data-value="SSANGYOUNG">SSANGYOUNG</option>
+            <option data-value="SUBARU">SUBARU</option>
+            <option data-value="SUZUKI">SUZUKI</option>
+            <option data-value="TOWNER">TOWNER</option>
+            <option data-value="TOYOTA">TOYOTA</option>
+            <option data-value="TROLLER">TROLLER</option>
+            <option data-value="VOLVO">VOLVO</option>
+            <option data-value="VW">VW</option>
+            <option data-value="WILLYS OVERLAND">WILLYS_OVERLAND</option>
+            </datalist>
+            </div>
+            <div class="label-float w33">
+            <label>Modelo</label>
+            <input type="text" list="veiculomodelo" id="veiculomodeloValidacao" placeholder="Modelo do veículo" />
+            <datalist name="veiculomodelo" id="veiculomodelo" required>
+            
+            </datalist>
+            </div>
+            <div class="label-float w33">
+            <label>Valor</label>
+            <input id="veiculovalor" name="veiculovalor" type="text" placeholder="Valor do veiculo" onkeyup="if (!window.__cfRLUnblockHandlers) return false; formatarMoeda();" required data-cf-modified-21628119a432dbfdcce7d55b-="" />
+            </div>
+            </section>
+            
+            <section id="opcaoMoto" class="box-opcoes-tipo-de-veiculo" style="display: none">
+            <div class="label-float w49">
+            <label class="labelForm">Marca</label>
+            <input type="text" list="marcamotolist" id="motomarcaValidacao" placeholder="Cilindradas" />
+            <datalist id="marcamotolist" name="motomarca" required>
+            <option data-value="150">Motos - Até 150 CC</option>
+            <option data-value="250">Motos - Até 250 CC</option>
+            <option data-value="650">Motos - Até 650 CC</option>
+            <option data-value="800">Motos - Até 800 CC</option>
+            <option data-value="1000">Motos - Até 1000 CC</option>
+            <option data-value="1600">Motos - Até 1600 CC</option>
+            <option data-value="2300">Motos - Até 2300 CC</option>
+            </datalist>
+            </div>
+            <div class="label-float w49">
+            <label>Valor</label>
+            <input id="veiculovalorMoto" name="veiculovalor" type="text" placeholder="Valor do veiculo" onkeyup="if (!window.__cfRLUnblockHandlers) return false; formatarMoeda2();" required data-cf-modified-21628119a432dbfdcce7d55b-="" />
+            </div>
+            </section>
+            
+            <section id="opcaoOutro" class="box-opcoes-tipo-de-veiculo" style="display: none">
+            <div class="label-float w100">
+            <label>Categoria</label>
+            <input type="text" list="outroCategoriaList" id="categoriaveiculoValidacao" placeholder="Escolha a categoria" />
+            <datalist id="outroCategoriaList" name="categoriaveiculo" required>
+            <option data-value="EMBARCAÇÕES">Embarcações de até 20 pés</option>
+            <option data-value="JETSKI">Jet Sky</option>
+            <option data-value="OUTROS">Outros</option>
+            </datalist>
+            </div>
+            </section>
+            </div>
+            
+            <div class="box-flex">
+            <h2><span>3. </span>Dados de Transporte</h2>
+            <div class="label-float w33">
+            <label>Estado de Origem</label>
+            <select name="estadoorigem" id="estadoorigem" required></select>
+            </div>
+            <div class="label-float w33">
+            <label>Cidade de Origem</label>
+            <select name="cidadeorigem" id="cidadeorigem" required>
+            <option value="">Selecione primeiro o estado</option>
+            </select>
+            </div>
+            <div class="label-float w33">
+            <label>Modo de Coleta</label>
+            <input type="text" list="escolhacoleta" id="escolhacoletaValidacao" placeholder="Modo de coleta do veículo" />
+            <datalist name="escolhacoleta" id="escolhacoleta" required>
+            <option data-value="Coletar no meu endereço">Coletar no meu endereço</option>
+            <option data-value="Vou entregar na base da Nacional">Vou entregar na base da Nacional Transportes</option>
+            </datalist>
+            </div>
+            </div>
+            <div class="box-flex">
+            <div class="label-float w33">
+            <label>Estado de Destino</label>
+            <select name="estadoentrega" id="estadoentrega" required></select>
+            </div>
+            <div class="label-float w33">
+            <label>Cidade de Destino</label>
+            <select name="cidadeentrega" id="cidadeentrega" required>
+            <option value="">Selecione primeiro o estado</option>
+            </select>
+            </div>
+            <div class="label-float w33">
+            <label>Modo de Retirada</label>
+            <input type="text" list="escolharetirada" id="escolharetiradaValidacao" placeholder="Modo de retirada do veículo" />
+            <datalist name="escolharetirada" id="escolharetirada" required>
+            <option data-value="Coletar no meu endereço">Entregar no meu endereço</option>
+            <option data-value="Vou entregar na base da Nacional">Entregar na base da Nacional Transportes</option>
+            </datalist>
+            </div>
+            </div>
+            <div class="box-flex">
+            <div class="label-float w49">
+            <label>Motivo</label>
+            <input type="text" list="motivo" id="motivoValidacao" placeholder="Selecione o motivo" />
+            <datalist name="motivo" id="motivo" required>
+            <option data-value="Compra de Veículo Particular">Compra de veículo particular</option>
+            <option data-value="Compra de Veículo Comercial">Compra de veículo comercial</option>
+            <option data-value="Compra de Veículo de Leilão">Compra de veículo de leilão</option>
+            <option data-value="Remanejo/renovação de Frota">Remanejo/renovação de frota</option>
+            <option data-value="Mudança/Transferência de Emprego">Mudança/transferência de emprego</option>
+            <option data-value="Turismo/Passeio">Turismo/passeio</option>
+            <option data-value="outros">Outros</option>
+            </datalist>
+            </div>
+            <div class="label-float w49">
+            <label>Data aproximada do transporte</label>
+            <input type="date" name="datatransporte" id="datatransporte" placeholder="Data aproximada do transporte" max="2299-12-31" />
+            </div>
+            </div>
+            <div class="box-flex">
+            <div class="label-float w100">
+            <label>Observações</label>
+            <textarea name="obs" id="observacao" placeholder="Observações" rows="3"></textarea>
+            </div>
+            </div>
+            <div class="box-flex">
+            <div class="label-float w49">
+            <div class="box-checkbox">
+            <input type="checkbox" id="Termosdeuso" name="Termosdeuso" />
+            <label for="Termosdeuso" class="checktext">Li e aceito os
+            <a class="checktext" href="#popup-61bc7b76cdd2e" rel="lightbox" data-type="inline">termos de Uso e Privacidade</a
+                        ></label
+                        >
+            </div>
+            <div class="box-checkbox">
+            <input type="checkbox" id="whatsapp" name="whatsapp" />
+            <label for="whatsapp" class="checktext">Aceito receber informações e cotações por
+            e-mail/WhatsApp/telefone</label
+                        >
+            </div>
+            </div>
+            <div class="label-float flex-end w49">
+            <div id="recaptcha" class="g-recaptcha" data-sitekey="6Lc7Aa0dAAAAAJkfJvHaEAV74gsVUY6GGijBCGpS"></div>
+            <div class="chave-secreta: 6Lc7Aa0dAAAAACYWAMI8r6gAdi5Up3AE4Ejejkmd"></div>
+            <button type="button" onclick="if (!window.__cfRLUnblockHandlers) return false; enviarForm(); exibirPopUp('alertaPopUp');" data-cf-modified-21628119a432dbfdcce7d55b-="">
+            Enviar
+            </button>
+            </div>
+            </div>
+            <div id="mensagem" class="EstiloMensagemDeErro"></div>
+        </form>
+    </section>
+    <!--/ Form -->
 
     <!-- Main -->
     <main id="main">
@@ -207,14 +484,14 @@
         jQuery(window).scroll(function () {
         $scrollTop = $(this).scrollTop();
         if ($scrollTop >= 500) {
-            $('.bg-transparente').css('background-color', 'red');
+            $('.bg-header').addClass('active');
         } else {
-            $('.bg-transparente').css('background-color', 'transparent');
+            $('.bg-header').removeClass('active');
         }
         });
     </script>
 
-    <!-- NAVBAR - HIDE -->
+    <!-- NAVBAR - HIDE
     <script>
         jQuery(function ($) {
         $('.nav-link').on('click', function () {
@@ -222,6 +499,24 @@
         })
     });
     </script>
-    
+     -->
+
+     <script>
+        jQuery(function ($) {
+        count=0;
+        
+        $('.navbar-toggler').on('click', function () {
+            if (count==0) {
+                $('.bg-header').addClass('active');
+                count = count + 1;
+            } else {
+                setTimeout(function(){  $('.bg-header').removeClass('active'); }, 300);
+                count = count - 1;
+            }
+        });
+            
+    });
+    </script>
+
 </body>
 </html>

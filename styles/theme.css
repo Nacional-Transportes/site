@@ -124,7 +124,7 @@ body::-webkit-scrollbar-thumb {
     background: white;
   }
 }
-
+ 
 @keyframes preloader {
   25% {
     opacity: 0.7;

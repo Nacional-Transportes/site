@@ -1,0 +1,180 @@
+/*Reset Global*/
+html {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+/*Variável*/
+$primary-color: #fff;
+$primary-background: #101010;
+
+$font-paragraph: "Montserrat", sans-serif;
+$size-paragraph: 14px;
+$color-paragraph: #fff;
+
+$font-title: 'Archivo Black', sans-serif;
+$size-title: 23px;
+$color-title: #fff;
+
+$color-link: #fff;
+
+$color-active: blue;
+
+$color-placeholder: orange;
+
+$scroll-color-bg: black;
+$scroll-color-bg-thumb: red;
+$scroll-color-border: blue;
+
+$preloader-color-bg: white;
+$preloader-color-bg-loading: black;
+
+
+/*Theme*/
+body {
+    font-size: 100%;
+    color: $primary-color;
+    background-color: $primary-background;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+a {
+    color: $color-link;
+}
+
+.nav-item.scroll.active a {
+    color: $color-active
+}
+
+
+/*Cor do Scroll*/
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background:  $scroll-color-bg;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $scroll-color-bg-thumb;
+    border-radius: 20px;
+    border: 2px solid $scroll-color-border;
+}
+
+/*Preloader*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background:$preloader-color-bg;
+}
+.preloader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 115px;
+    height: 25px;
+    margin: 0px 0 0 -55px;
+    z-index: 1500;
+}
+.preloader span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: $preloader-color-bg-loading;
+    opacity: 0.5;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.9);
+    animation: preloader 1.2s infinite ease-in-out;
+}
+.preloader span:nth-child(1) {
+left: 0px;
+}
+.preloader span:nth-child(2) {
+left: 22px;
+animation-delay: 0.2s;
+}
+.preloader span:nth-child(3) {
+left: 44px;
+animation-delay: 0.4s;
+}
+.preloader span:nth-child(4) {
+left: 66px;
+animation-delay: 0.6s;
+}
+.preloader span:nth-child(5) {
+left: 88px;
+animation-delay: 0.8s;
+}
+
+@keyframes preloader {
+    25% {
+        opacity: 0.7;
+        background:  $preloader-color-bg;
+    }
+    50% {
+        opacity: 1;
+        box-shadow: 0 5px 3px rgba(0, 0, 0, 0.5);
+    }
+    75% {
+        opacity: 0.7;
+        background:  $preloader-color-bg;
+    }
+}
+
+
+
+/*-----Form-------*/
+/*Placeholder*/
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $color-placeholder;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $color-placeholder;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: $color-placeholder;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: $color-placeholder;
+  }
+
+/*Temp*/
+body {
+    section {
+        height: 800px;
+    }
+}
+
+#main section:nth-child(even) {
+    background: #CCC
+}
+
+#main section:nth-child(odd) {
+    background: rgb(100, 99, 99)
+}
+
+footer {
+    height: 500px; 
+    background-color: black;
+}
+
+
+    

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- META TAGS GOOGLE -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Site Template</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Front-end: Everton Paixão"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+
+    <!-- META TAGS FACEBOOK -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+
+    <!-- URL SITE -->
+    <base href="" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="stylesheet" href=""/>
+
+    <!-- Bootstrap 5.1.3 -->
+    <link rel="stylesheet" href="library/bootstrap-5.1.3/css/bootstrap.min.css">
+
+    <!-- FONT AWESOME -->
+	<link rel="stylesheet" href="">
+
+    <!-- OWL CAROUSEL 2 -->
+	<link rel="stylesheet" href="library/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="library/owlcarousel/assets/owl.theme.default.min.css">    
+
+    <!-- Theme Site CSS -->
+    <link rel="stylesheet" href="styles/theme.css">
+
+</head>
+<body>
+
+    <h1 style="display: none;">Título da página do site</h1>    
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+
+        <!-- Nav -->
+        <nav class="navbar navbar-dark bg-transparente">
+            <div class="container">
+                <a class="navbar-brand" href="#">Logomarca</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-right">
+                    <a href="">Link</a>
+                </div>
+        
+                <div class="collapse navbar-collapse" id="navbarsExample01">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item scroll"><a class="nav-link" aria-current="page" href="#home">Home</a></li>
+                        <li class="nav-item scroll"><a class="nav-link" href="#section-01">Link 01</a></li>
+                        <li class="nav-item scroll"><a class="nav-link" href="#section-02">Link 02</a></li>
+                        <li class="nav-item scroll"><a class="nav-link" href="#section-03">Link 03</a></li>
+                        <li class="nav-item scroll"><a class="nav-link" href="#section-04">Link 04</a></li>
+                        <li class="nav-item scroll"><a class="nav-link" href="#section-05">Link 05</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--/ Nav -->
+
+    </header>
+    <!--/ Header -->
+
+    <div id="home" class="scroll">
+        <div class="owl-carousel owl-banner owl-theme">
+            <div class="item">
+                <svg class="bd-placeholder-img" width="100%" height="650px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#000"></rect></svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main id="main">
+
+        <!-- Section -->
+        <section id="section-01" class="scroll">
+            <div class="container">
+                <h1>Title 01</h1>
+            </div>
+        </section>
+        <!--/ Section -->
+
+        <!-- Section -->
+        <section id="section-02" class="scroll">
+            <div class="container">
+                <h1>Title 02</h1>
+            </div>
+        </section>
+        <!--/ Section -->
+
+        <!-- Section -->
+        <section id="section-03" class="scroll">
+            <div class="container">
+                <h1>Title 03</h1>
+            </div>
+        </section>
+        <!--/ Section -->
+
+        <!-- Section -->
+        <section id="section-04" class="scroll">
+            <div class="container">
+                <h1>Title 04</h1>
+            </div>
+        </section>
+        <!--/ Section -->
+
+        <!-- Section -->
+        <section id="section-05" class="scroll">
+            <div class="container">
+                <h1>Title 05</h1>
+            </div>
+        </section>
+        <!--/ Section -->
+
+        <!-- Section -->
+        <section id="section-06" class="scroll">
+            <div class="container">
+                <h1>Title 06</h1>
+            </div>
+        </section>
+        <!--/ Section -->
+
+    </main>
+    <!--/ Main -->
+
+    <!-- Footer -->
+    <footer id="footer">
+
+    </footer>
+    <!--/ Footer -->
+
+    <!-- Jquery -->
+    <script src="library/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <script src="library/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Preloader -->
+    <script>
+        $("#preloader").fadeOut("slow");  
+    </script>
+
+    <!-- Navbar Fixed -->
+    <script>
+        $('.navbar').addClass('fixed-top');
+    </script>
+
+    <!-- OWL CAROUSEL 2 -->
+	<script src="library/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- OWL CAROUSEL 2 - BANNER -->
+    <script>
+        $(document).ready(function() {
+          $('.owl-carousel.owl-banner').owlCarousel({
+            autoplay:true,
+            loop: true,
+            margin: 0,
+            items: 1,
+            nav: false,
+            dots: false,
+            responsiveClass: true
+          })
+        })
+    </script>
+    
+    <!-- SCROLL NAV-ITEM - ACTIVE -->
+    <script>
+        $(window).scroll(function () {
+            var scrollDistance = $(window).scrollTop();
+            $('section.scroll').each(function (i) {
+                if ($(this).position().top <= scrollDistance) {
+                $('.nav-item.scroll.active').removeClass('active');
+                $('.nav-item.scroll').eq(i).addClass('active');
+                }
+            });
+        })
+        .scroll();
+    </script>
+
+    <!-- SCROLL - TOP -->
+    <script>
+        jQuery(window).scroll(function () {
+        $scrollTop = $(this).scrollTop();
+        if ($scrollTop >= 500) {
+            $('.bg-transparente').css('background-color', 'red');
+        } else {
+            $('.bg-transparente').css('background-color', 'transparent');
+        }
+        });
+    </script>
+
+    <!-- NAVBAR - HIDE -->
+    <script>
+        jQuery(function ($) {
+        $('.nav-link').on('click', function () {
+            $('.navbar .collapse').collapse('hide');
+        })
+    });
+    </script>
+    
+</body>
+</html>

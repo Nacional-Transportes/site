@@ -12,6 +12,7 @@ body {
 
 /*Variável*/
 $site-bg: #fff;
+$site-font: 'Barlow', sans-serif;
 
 $primary-color: #507764;
 $primary-bg: linear-gradient(90deg, #446058, #507764);
@@ -19,13 +20,20 @@ $primary-bg: linear-gradient(90deg, #446058, #507764);
 $second-color: #fab519;
 $second-bg: #fab519;
 
-$font-paragraph: "Montserrat", sans-serif;
-$size-paragraph: 14px;
-$color-paragraph: #fff;
+$font-paragraph: 'Barlow', sans-serif;
+$size-paragraph: 18px;
+$color-paragraph: #464655;
 
-$font-title: 'Archivo Black', sans-serif;
-$size-title: 23px;
-$color-title: #fff;
+$font-title: 'Barlow', sans-serif;
+$size-title: 21px;
+$color-title: #507864;
+$weight-title: 800;
+$transform-title: uppercase;
+
+$font-subtitle: 'Barlow', sans-serif;
+$size-subtitle: 21px;
+$color-subtitle: #507864;
+$weight-subtitle: 800;
 
 $color-link: #fff;
 
@@ -45,8 +53,8 @@ $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w
 
 /*Theme*/
 body {
-    font-size: 100%;
-    color: $primary-color;
+    font-size: 100%;    
+    font-family: $site-font;
     background-color: $site-bg;
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
@@ -58,10 +66,10 @@ a {
     text-decoration: none;
 }
 
-.nav-item.scroll.active a {
-    color: $color-active
+p {
+    color: $color-paragraph;
+    font-size: $size-paragraph;
 }
-
 
 /*Cor do Scroll*/
 body::-webkit-scrollbar {
@@ -150,38 +158,18 @@ animation-delay: 0.8s;
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: $color-placeholder;
-  }
-  ::-moz-placeholder {
+}
+::-moz-placeholder {
     /* Firefox 19+ */
     color: $color-placeholder;
-  }
-  :-ms-input-placeholder {
+}
+:-ms-input-placeholder {
     /* IE 10+ */
     color: $color-placeholder;
-  }
-  :-moz-placeholder {
+}
+:-moz-placeholder {
     /* Firefox 18- */
     color: $color-placeholder;
-  }
-
-/*Temp*/
-body {
-    section {
-        height: 800px;
-    }
-}
-
-#main section:nth-child(even) {
-    background: #CCC
-}
-
-#main section:nth-child(odd) {
-    background: rgb(100, 99, 99)
-}
-
-footer {
-    height: 500px; 
-    background-color: black;
 }
 
 
@@ -242,6 +230,12 @@ li.nav-item .dropdown-item {
 
 
 /*Carousel*/
+.owl-carousel.owl-banner .title {
+    font-weight: 100;
+    font-size: 54px;
+    margin-left: 1.8vw;
+}
+
 .owl-carousel.owl-banner .container {
     position: relative;
 }
@@ -262,8 +256,77 @@ li.nav-item .dropdown-item {
     text-align: left;
 }
 
+/*Style Padrão*/
+.nav-item.active a {
+    color: $color-active
+}
+
+.section {
+    padding: 6rem 0;
+}
+
+.section .title {
+    font-size: $size-title;
+    font-family: $font-title;
+    font-weight: $weight-title;
+    text-transform: $transform-title;
+    color: $color-title;
+    margin-bottom: 2.5rem;
+}
+
+.section .sub-title {
+    font-size: $size-subtitle;
+    font-family: $font-subtitle;
+    font-weight: $weight-subtitle;
+    color: $color-subtitle;
+    margin-bottom: 2rem;
+}
+
+.section .link.saiba-mais {
+    font-size: $size-subtitle;
+    font-family: $font-subtitle;
+    font-weight: $weight-subtitle;
+    color: $color-subtitle;
+    border: 1px solid #000;
+    border-radius: 10px 0px 10px 0px;
+    padding: 0.3rem 0.8rem;
+    margin-top: 1.5rem;
+    display: table;
+
+    &:hover {
+        background: $second-color;
+        color: #fff;
+    }
+
+}
+
+/*Section Form*/
 #section-form {
     position: relative;
     z-index: 99;
-    margin-top: -5.7rem;
+    margin-top: -7vw;
+}
+
+#section-serviços .row {
+    margin-bottom: 6rem;
+}
+
+#section-serviços .sub-title.destaque {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 100;
+}
+
+#section-serviços .img-transporte-veiculos {
+    margin-left: -142px;
+}
+
+#section-atuacao.bg {
+    background-color: #f1f1f1;
+}
+
+#section-atuacao .col-flex {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }

@@ -439,18 +439,6 @@
         .scroll();
     </script>
 
-    <!-- SCROLL - TOP -->
-    <script>
-        jQuery(window).scroll(function () {
-        $scrollTop = $(this).scrollTop();
-        if ($scrollTop >= 500) {
-            $('.bg-header').addClass('active');
-        } else {
-            $('.bg-header').removeClass('active');
-        }
-        });
-    </script>
-
     <!-- NAVBAR - HIDE
     <script>
         jQuery(function ($) {
@@ -461,6 +449,7 @@
     </script>
      -->
 
+     <!-- NAVBAR ACTIVE E SCROLL TOP -->
      <script>
         jQuery(function ($) {
         count=0;
@@ -472,6 +461,19 @@
             } else {
                 setTimeout(function(){  $('.bg-header').removeClass('active'); }, 300);
                 count = count - 1;
+            }
+        });
+
+        jQuery(window).scroll(function () {
+            $scrollTop = $(this).scrollTop();
+            if ($scrollTop >= 400) {
+                $('.bg-header').addClass('active');
+            } else {
+                if (count==1) {
+                    $('.bg-header').addClass('active');
+                } else {
+                    $('.bg-header').removeClass('active');
+                }
             }
         });
             

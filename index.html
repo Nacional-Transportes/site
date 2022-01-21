@@ -519,6 +519,34 @@ segurança em todos os aspectos.
         <section id="section-blog" class="section bg">
             <div class="container">
                 <h1 class="title">Blog</h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="">
+                            <img class="img-fluid" src="images/blog01.jpg" alt="" width="100%">
+                            <p class="paragraph">Como transportar sua moto de maneira segura</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="">
+                            <img class="img-fluid" src="images/blog02.jpg" alt="" width="100%">
+                            <p class="paragraph">Como funciona o rastreamento de veículos</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="">
+                            <img class="img-fluid" src="images/blog01.jpg" alt="" width="100%">
+                            <p class="paragraph">Como transportar sua moto de maneira segura</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="">
+                            <img class="img-fluid" src="images/blog02.jpg" alt="" width="100%">
+                            <p class="paragraph">Como funciona o rastreamento de veículos</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
         <!--/ Section -->
@@ -527,6 +555,59 @@ segurança em todos os aspectos.
         <section id="section-depoimentos" class="section bg">
             <div class="container">
                 <h1 class="title">Depoimentos</h1>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="owl-carousel owl-depoimentos owl-theme">
+                            <div class="item">
+                                <img class="img-fluid ico-depoimento-inicio" src="images/ico-depoimento01.png" alt=""/>
+                                <p class="paragraph">
+                                    Parabéns!! Meus sinceros agradecimentos.
+                                    Pela segunda vez usei o serviço da Nacional 
+                                    Transportes e gostaria de deixar o meu elogio 
+                                    à Priscila pelo atendimento prestado nas 
+                                    duas ocasiões.
+                                    <br><br>
+                                    Fui sempre bem atendido com informações 
+                                    rápidas e precisas acerca da transferência do 
+                                    meu veículo entre Rio x SSA e SSA x Rio.
+                                    <br><br>
+                                    Veículo transportado – Honda City (FBA 0369)
+                                    <br><br>
+                                    Parabéns!! Meus sinceros agradecimentos.
+                                    <br><br>
+                                    Att,
+                                    <br>
+                                    Fernando de Barros.
+                                </p>
+                                <img class="img-fluid ico-depoimento-fim" src="images/ico-depoimento02.png" alt=""/>
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid ico-depoimento-inicio" src="images/ico-depoimento01.png" alt=""/>
+                                <p class="paragraph">
+                                    Amanda,
+                                    <br><br>
+                                    Recebi o veiculo em São Paulo e deu tudo certo!
+                                    <br><br>
+                                    Gostaria de agradecer pelo serviço prestado 
+                                    pela Nacional Transportes e principalmente a 
+                                    você, que deu todo o suporte para que tudo 
+                                    desse certo, sempre com muita cordialidade 
+                                    e proﬁssionalismo.
+                                    <br><br>
+                                    Você é uma ótima proﬁssional!
+                                    <br><br>
+                                    Encaminhe esse e-mail para seu chefe para 
+                                    que ele saiba que você faz a diferença.
+                                    <br><br>
+                                    Obrigado
+                                    <br><br>
+                                    Alexandre Fernandes Guilherme
+                                </p>
+                                <img class="img-fluid ico-depoimento-fim" src="images/ico-depoimento02.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!--/ Section -->
@@ -593,6 +674,25 @@ segurança em todos os aspectos.
                 },
                 1000:{
                     items:6
+                }
+            }
+          });
+        });
+
+        $(document).ready(function() {
+          $('.owl-carousel.owl-depoimentos').owlCarousel({
+            autoplay:false,
+            loop: false,
+            margin: 50,
+            nav: true,
+            dots: false,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                700:{
+                    items:2
                 }
             }
           });

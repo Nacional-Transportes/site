@@ -307,6 +307,11 @@ li.nav-item .dropdown-item {
     margin-top: -7vw;
 }
 
+#box-form-cotacao {
+    max-width: 1300px;
+    background: $primary-bg;
+}
+
 #section-serviços .row {
     margin-bottom: 6rem;
 }
@@ -329,4 +334,52 @@ li.nav-item .dropdown-item {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+}
+
+#section-blog.bg {
+    background: $primary-bg;
+}
+
+#section-blog .title {
+    color: #fff;
+}
+
+#section-blog a:hover p {
+    color: #fff;
+}
+
+#section-blog .paragraph {
+    color: #bee1b9;
+    font-size: 26px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#section-blog .row {
+    margin-bottom: 3rem;
+}
+
+#section-depoimentos.bg {
+    background: url(../images/bg-depoimentos.jpg) no-repeat top right;
+}
+
+#section-depoimentos .ico-depoimento-inicio {
+    width: inherit !important;
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: 3rem;
+}
+
+#section-depoimentos .ico-depoimento-fim {
+    width: inherit !important;
+    float: right;
+    margin-right: 3rem;
+    margin-top: -3rem;
+}
+
+#section-depoimentos p {
+    background: #f1f1f1;
+    padding: 3rem;
+    border-radius: 20px 0px 20px 0px;
+    margin-top: 2rem;
 }

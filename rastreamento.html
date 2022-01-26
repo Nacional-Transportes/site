@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- META TAGS GOOGLE -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nacional Transportes</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Front-end: Everton Paixão"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+
+    <!-- META TAGS FACEBOOK -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+
+    <!-- URL SITE -->
+    <base href="" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;800&display=swap" rel="stylesheet">
+
+    <!-- Rastreamento -->
+    <link rel="stylesheet" href="http://vardnn0605.locaweb.com.br/css/autolog_geral.css"> 
+	<link rel="stylesheet" href="http://vardnn0605.locaweb.com.br/css/modais.css">  
+	<link rel="stylesheet" href="http://codehouse.com.br/js/table/tablev4.css">
+	<link rel="stylesheet" href="http://codehouse.com.br/js/mascara/css_gleiton.css">
+	<link rel="stylesheet" href="http://codehouse.com.br/js/menu_contexto/menu_contexto.css">
+	<link rel="stylesheet" href="http://codehouse.com.br/js/util/util.css">
+    <link rel="stylesheet" href="styles/rastreamento.css">
+
+    <!-- Bootstrap 5.1.3 -->
+    <link rel="stylesheet" href="library/bootstrap-5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="library/bootstrap-5.1.3/font/bootstrap-icons.css">
+
+    <!-- FONT AWESOME -->
+	<link rel="stylesheet" href="">
+
+    <!-- OWL CAROUSEL 2 -->
+	<link rel="stylesheet" href="library/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="library/owlcarousel/assets/owl.theme.default.min.css">    
+
+    <!-- Theme Site CSS -->
+    <link rel="stylesheet" href="https://nacionalgo.com.br/html/codigo/styles/form-cotacao.css">
+    <link rel="stylesheet" href="styles/theme.css">
+</head>
+<body>
+
+    <h1 style="display: none;">Nacional Transportes</h1>    
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+
+        <!-- Nav -->
+        <nav class="navbar navbar-dark bg-header">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="images/logo-nacional-transportes.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-right">
+                    <a class="link" href="">Cotação Online</a>
+                </div>
+        
+                <div class="collapse navbar-collapse" id="navbarsExample01">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <!--li class="nav-item scroll"><a class="nav-link" aria-current="page" href="#home">Home</a></li-->
+                        <li class="nav-item"><a class="nav-link" href="">Empresa</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                              <li><a class="dropdown-item" href="#">Transporte de Veículos</a></li>
+                              <li><a class="dropdown-item" href="#">Transporte de Motos</a></li>
+                              <li><a class="dropdown-item" href="#">Transporte Porta-a-Porta</a></li>
+                              <li><a class="dropdown-item" href="#">Transporte com Sider</a></li>
+                              <li><a class="dropdown-item" href="#">Transporte Aéreo de Veículos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="">Transportes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Dúvidas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Qualidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--/ Nav -->
+
+    </header>
+    <!--/ Header -->
+
+    <!-- Banner -->
+    <div id="home" class="scroll">
+        <div class="owl-carousel owl-banner owl-theme">
+            <div class="item">
+                <img class="img-fluid" src="images/banner.jpg" alt="">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                      <h2 class="title">Transformamos o<br>jeito de transportar<br>veículos</h2>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!--/ Banner -->
+    
+    <!-- Main -->
+    <main id="main">
+
+        <!-- Section -->
+        <section id="section-rastreamento" class="bg section">
+            <div class="container">
+                <h1 class="title">Rastreamento de veículo</h1>
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div id="table-scroll" class="table-scroll">  
+                            <table id='tabela_historicos' class='invisivel tabela-body' data-tabela_bd='cotacoes_veiculos_historicos' data-modo='CC'
+                                data-titulo="Jornada do Veículo|c|#FFF|#527cbc"
+                                data-col = "d#Data#13ep|s#Histórico#100ep"
+                                data-multiselecao='não'
+                                data-tamanho='800|800|450'
+                                data-frodape='1ce|0|||' 
+                                data-tabela="cotacoes_veiculos_historicos" 
+                                data-inputs="INPUTS_JSON" >
+                                <thead></thead>
+                                <tbody></tbody>
+                                <tfoot>
+                                    <tr class='footfalso'></tr>          
+                                </tfoot>
+                            </table>
+                        </div> 
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+        <!--/ Section -->
+
+    </main>
+    <!--/ Main -->
+
+    <!-- Footer -->
+    <footer id="footer" class="bg">
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="title">Fale Conosco</h1>
+                        <p class="paragraph">Rodovia BR-324, KM 11,5, Valéria, Salvador-Ba, CEP: 41300-500 / <a href="tel://7132896100"><i>+55 (71) 3289-6100</i></a></p>
+                        <p class="paragraph">Av. Engenheiro Luís Carlos Berrini, 1748 (9º andar), Itaim Bibi, São Paulo-SP, CEP: 04571-000 / <a href="tel://1146372040"><i>+55 (11) 4637-2040</i></a></p>
+                        <div class="box-redes">
+                            <p class="paragraph"><a href="" target="_blank"><i class="bi bi-whatsapp"></i></a></p>
+                            <p class="paragraph"><a href="" target="_blank"><i class="bi bi-facebook"></i></a></p>
+                            <p class="paragraph"><a href="" target="_blank"><i class="bi bi-instagram"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <i class="text-copyright">2022. Nacional Transportes, CNPJ: 12.098.304/0001-12 - Todos os direitos reservados</i> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--/ Footer -->
+
+    <!-- Jquery -->
+    <script src="library/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <script src="library/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Preloader -->
+    <script>
+        $("#preloader").fadeOut("slow");  
+    </script>
+
+    <!-- Navbar Fixed -->
+    <script>
+        $('.navbar').addClass('fixed-top');
+    </script>
+
+    <!-- OWL CAROUSEL 2 -->
+	<script src="library/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- OWL CAROUSEL 2 - BANNER -->
+    <script>
+        $(document).ready(function() {
+          $('.owl-carousel.owl-banner').owlCarousel({
+            autoplay:false,
+            loop: true,
+            margin: 0,
+            items: 1,
+            nav: false,
+            dots: false,
+            responsiveClass: true
+          });
+        });      
+
+    </script>
+    
+    <!-- SCROLL NAV-ITEM - ACTIVE -->
+    <script>
+        $(window).scroll(function () {
+            var scrollDistance = $(window).scrollTop();
+            $('section.scroll').each(function (i) {
+                if ($(this).position().top <= scrollDistance) {
+                $('.nav-item.scroll.active').removeClass('active');
+                $('.nav-item.scroll').eq(i).addClass('active');
+                }
+            });
+        })
+        .scroll();
+    </script>
+
+    <!-- NAVBAR - HIDE
+    <script>
+        jQuery(function ($) {
+        $('.nav-link').on('click', function () {
+            $('.navbar .collapse').collapse('hide');
+        })
+    });
+    </script>
+     -->
+
+     <!-- NAVBAR ACTIVE E SCROLL TOP -->
+     <script>
+        jQuery(function ($) {
+        count=0;
+        
+        $('.navbar-toggler').on('click', function () {
+            if (count==0) {
+                $('.bg-header').addClass('active');
+                count = count + 1;
+            } else {
+                setTimeout(function(){  $('.bg-header').removeClass('active'); }, 300);
+                count = count - 1;
+            }
+        });
+
+        jQuery(window).scroll(function () {
+            $scrollTop = $(this).scrollTop();
+            if ($scrollTop >= 50) {
+                $('.bg-header').addClass('active');
+            } else {
+                if (count==1) {
+                    $('.bg-header').addClass('active');
+                } else {
+                    $('.bg-header').removeClass('active');
+                }
+            }
+        });
+            
+    });
+    </script>
+
+
+    <!-- ---------------------------------- Importa bibliotecas Codehouse JS------------------------------- -->
+    <script src="http://vardnn0605.locaweb.com.br/js/codehouse_util.min.js"></script>
+    <script src="http://vardnn0605.locaweb.com.br/js/codehouse_mascara.min.js"></script>
+    <script src="http://vardnn0605.locaweb.com.br/js/datafields.min.js"></script>
+    <script src="http://vardnn0605.locaweb.com.br/js/codehouse_table.min.js"></script>
+    <script src="http://vardnn0605.locaweb.com.br/js/bd.min.js"></script>
+    <script src="http://vardnn0605.locaweb.com.br/js/codehouse_menu_contexto.min.js"></script>
+    <script src="http://vardnn0605.locaweb.com.br/js/tabelas_basicas.min.js"></script>
+
+    <script>
+    _monta_tabela(['tabela_historicos']);
+    _carregar_historico();
+
+    function _carregar_historico(table_id,coluna_cab) { 
+        cotacao_veiculo= '140';
+        console.log(cotacao_veiculo);
+
+    /*	codigo  = registro_obj[0].id.split('|'); // transforma em array;
+        cotacao = codigo[0];
+        cotacao_veiculo = codigo[1];
+        // cotacao_veiculo = _h('#cve_codigo').value;*/
+
+        fetch("api_codehouse_queries_com_where_json.php?query_nome=rastreamento_veiculo&cve_codigo=" + cotacao_veiculo)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            if (data) _carrega_table_json('tabela_historicos', data, []);
+            _primeira_linha('tabela_historicos');
+        })
+        .catch((error) => {
+        console.error('Error:', error);
+        });
+
+    }
+    </script>
+
+</body>
+</html>

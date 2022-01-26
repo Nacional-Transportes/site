@@ -171,6 +171,7 @@ body::-webkit-scrollbar-thumb {
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.55);
   border-color: rgba(255, 255, 255, 0);
+  margin-top: 0.5rem;
 }
 
 .navbar-toggler-icon {
@@ -361,4 +362,58 @@ li.nav-item .dropdown-item {
   padding: 3rem;
   border-radius: 20px 0px 20px 0px;
   margin-top: 2rem;
+}
+
+/*Footer*/
+#footer.bg {
+  background: #464655;
+  position: relative;
+}
+
+#footer .section {
+  padding-bottom: 0.8rem;
+}
+
+#footer .title {
+  color: #bee1b9;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+#footer .paragraph {
+  color: #fff;
+  text-align: left;
+}
+#footer .paragraph a {
+  color: #bee1b9;
+}
+
+#footer .box-redes {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+#footer .box-redes a {
+  margin-right: 1rem;
+}
+
+#footer .link {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  display: block;
+}
+#footer .link:hover {
+  color: #bee1b9;
+}
+
+#footer .text-copyright {
+  text-align: center;
+  color: #507864;
+  border-top: 1px solid #507864;
+  width: 100%;
+  display: block;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  font-size: 18px;
+  font-weight: bold;
 }/*# sourceMappingURL=theme.css.map */

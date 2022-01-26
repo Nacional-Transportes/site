@@ -1,0 +1,53 @@
+div#home {
+    height: 80px;
+    overflow: hidden;
+}
+
+#section-rastreamento.bg {
+    background: url(../images/bg-depoimentos.jpg) no-repeat top right;
+}
+
+.tabela_historicostitulo {
+    width: 100% !important;
+    padding: 2rem;
+    background: #4e7362 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+
+.table-scroll {
+    position: relative;
+    z-index: 1;
+    overflow: inherit !important;
+    border: 1px solid #4e7362;
+    background-color: white;
+    width: 100% !important;
+}
+
+#tabela_historicos {
+    width: 100% !important;
+    min-width: inherit !important;
+}
+
+.col-cab-congela {
+    width:30% !important;
+}
+
+.tede-cab {
+    width:70% !important
+}
+
+.ajusta-input {
+    width: 100%;
+}
+
+#tabela_historicos_mensagem_vazia {
+    border: 1px solid #4e7362;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: 100% !important;
+    height: 100% !important;
+}

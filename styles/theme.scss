@@ -294,7 +294,7 @@ li.nav-item .dropdown-item {
 /*Carousel*/
 .owl-carousel.owl-banner .title {
     font-weight: 100;
-    font-size: 32px;
+    font-size: 54px;
     margin-left: 1.8vw;
 
     @media (max-width: 767px) {
@@ -475,6 +475,90 @@ li.nav-item .dropdown-item {
     padding: 3rem;
     border-radius: 20px 0px 20px 0px;
     margin-top: 2rem;
+}
+
+/*Pages*/
+.bg-ondulacao-banner-pages {
+    margin-top: -16vw;
+    z-index: 9;
+    position: relative;
+    @media (max-width: 991px) {
+        margin-top: -17vw;
+    }
+    @media (max-width: 700px) {
+        margin-top: -18vw;
+    }
+    @media (max-width: 554px) {
+        margin-top: -19vw;
+    }
+    @media (max-width: 480px) {
+        margin-top: -20vw;
+    }
+    @media (max-width: 385px) {
+        margin-top: -21vw;
+    }
+}
+
+/*Section Page Empresa*/
+#section-empresa {
+    padding-top: 0rem;
+}
+
+#section-empresa .sub-title {
+    font-size: 21px;
+    font-family: $font-subtitle;
+    font-weight: 800;
+    color: $color-subtitle;
+    margin-top:2rem;
+    margin-bottom: .5rem;
+}
+
+/*Aside*/
+#aside {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+
+#aside .box {
+    margin-top: 3rem;
+    padding: 1rem 5rem;
+}
+
+#aside .link {
+    border: 3px solid $second-color;
+    border-radius: 20px 0px 20px 0px;
+    padding: 0.8rem 1.8rem;
+    font-size: 41px;
+    color: $primary-color;
+    font-weight: 800;
+    margin-top: .6rem;
+    display: block;
+    @media (max-width: 1199px) {
+        font-size: 34px;
+    }
+    @media (max-width: 991px) {
+        font-size: 22px;
+    }
+}
+
+#aside .box.bg {
+    background: $primary-bg;
+    border-radius: 20px 0px 20px 0px;
+    @media (max-width: 1199px) {
+        padding: 1rem 2rem;
+    }
+    @media (max-width: 991px) {
+        padding: 0.5rem 1rem;
+    }
+}
+
+#aside .box .sub-title {
+    color: #bee1b9;
+}
+
+#aside .box .paragraph {
+    color: #fff;
 }
 
 /*Footer*/

@@ -518,6 +518,9 @@ li.nav-item .dropdown-item {
     display: flex;
     flex-flow: column;
     align-items: flex-end;
+    @media (max-width: 767px) {
+        align-items: center;
+    }
 }
 
 #aside .box {
@@ -540,6 +543,10 @@ li.nav-item .dropdown-item {
     @media (max-width: 991px) {
         font-size: 22px;
     }
+    @media (max-width: 767px) {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 #aside .box.bg {
@@ -550,6 +557,9 @@ li.nav-item .dropdown-item {
     }
     @media (max-width: 991px) {
         padding: 0.5rem 1rem;
+    }
+    @media (max-width: 767px) {
+        width: 100%;
     }
 }
 

@@ -578,6 +578,14 @@ li.nav-item .dropdown-item {
           align-items: flex-end;
 }
 
+@media (max-width: 767px) {
+  #aside {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 #aside .box {
   margin-top: 3rem;
   padding: 1rem 5rem;
@@ -606,6 +614,13 @@ li.nav-item .dropdown-item {
   }
 }
 
+@media (max-width: 767px) {
+  #aside .link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 #aside .box.bg {
   background: -webkit-gradient(linear, left top, right top, from(#446058), to(#507764));
   background: linear-gradient(90deg, #446058, #507764);
@@ -621,6 +636,12 @@ li.nav-item .dropdown-item {
 @media (max-width: 991px) {
   #aside .box.bg {
     padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #aside .box.bg {
+    width: 100%;
   }
 }
 

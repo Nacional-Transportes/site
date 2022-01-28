@@ -2,7 +2,7 @@
   background-color: #336b5d;
   width: 100%;
   border-radius: 50px 0px 50px 0px;
-  padding: 5rem;
+  padding: 1rem 5rem;
   max-width: 1136px;
   margin: 0 auto;
   -moz-box-sizing: border-box;
@@ -12,7 +12,7 @@
   text-align: center;
   margin: 0;
   color: #afdaae;
-  font-size: 30px;
+  font-size: 23px;
 }
 #box-form-cotacao .box-flex {
   display: flex;
@@ -29,8 +29,8 @@
   border-radius: 10px 0px;
   text-transform: uppercase;
   color: #fff;
-  font-size: 1rem;
-  margin: 15px 0 0px 0;
+  font-size: .8rem;
+  margin: 8px 0 0px 0;
 }
 
 #box-form-cotacao h2 span {
@@ -42,7 +42,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
 }
 
 #box-form-cotacao .label-float.flex-end {
@@ -85,8 +85,8 @@
 #box-form-cotacao select,
 #box-form-cotacao textarea {
   border: 1px solid #659880;
-  padding: 7px;
-  font-size: 17px;
+  padding: 5px;
+  font-size: 14px;
   background: #cce5d9;
   color: #336b5d;
   width: 100%;
@@ -144,7 +144,7 @@
 }
 
 #box-form-cotacao input[type="date"] {
-  padding: 7px;
+  padding: 5px;
 }
 
 #box-form-cotacao button[type="button"],
@@ -173,7 +173,7 @@
 }
 
 #box-form-cotacao select {
-    padding: 9.5px;
+    padding: 6.5px;
 }
 
 #box-form-cotacao .box-opcoes-tipo-de-veiculo {

@@ -294,16 +294,8 @@ li.nav-item .dropdown-item {
 /*Carousel*/
 .owl-carousel.owl-banner .title {
     font-weight: 100;
-    font-size: 54px;
+    font-size: 5vw;
     margin-left: 1.8vw;
-
-    @media (max-width: 767px) {
-        font-size: 34px;
-    }
-
-    @media (max-width: 567px) {
-        font-size: 4vw;
-    }
 }
 
 .owl-carousel.owl-banner .container {

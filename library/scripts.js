@@ -117,7 +117,7 @@ function navbarClickActiveScroll() {
 
         jQuery(window).scroll(function () {
             $scrollTop = $(this).scrollTop();
-            if ($scrollTop >= 400) {
+            if ($scrollTop >= 50) {
                 $('.bg-header').addClass('active');
             } else {
                 if (count==1) {

@@ -509,8 +509,12 @@ li.nav-item .dropdown-item {
     font-family: $font-subtitle;
     font-weight: 800;
     color: $color-subtitle;
-    margin-top:2rem;
+    margin-top:0;
     margin-bottom: .5rem;
+}
+
+#section-empresa .section-box {
+    margin-bottom: 4rem;
 }
 
 /*Section Page Serviços*/
@@ -532,6 +536,9 @@ li.nav-item .dropdown-item {
     justify-content: center;
     align-items: self-start;
     margin-bottom: 4rem;
+    @media (max-width: 991px) {
+        flex-flow: column;
+    }
 }
 
 #section-servicos .section-box .icon {
@@ -540,6 +547,24 @@ li.nav-item .dropdown-item {
 
 #section-servicos .section-box .icon img {
     max-width: 175px;
+}
+
+/*Section Page Qualidade*/
+#section-qualidade {
+    padding-top: 0rem;
+}
+
+#section-qualidade .sub-title {
+    font-size: 21px;
+    font-family: $font-subtitle;
+    font-weight: 800;
+    color: $color-subtitle;
+    margin-top:0;
+    margin-bottom: .5rem;
+}
+
+#section-qualidade .section-box {
+    margin-bottom: 4rem;
 }
 
 /*Aside*/
@@ -555,6 +580,7 @@ li.nav-item .dropdown-item {
 #aside .box {
     margin-top: 3rem;
     padding: 1rem 5rem;
+    padding-top: 2.1rem;
 }
 
 #aside .link {
@@ -566,6 +592,10 @@ li.nav-item .dropdown-item {
     font-weight: 800;
     margin-top: .6rem;
     display: block;
+    &:hover {
+        background-color: $primary-color;
+        color: $second-color;
+    }
     @media (max-width: 1199px) {
         font-size: 34px;
     }
@@ -574,6 +604,7 @@ li.nav-item .dropdown-item {
     }
     @media (max-width: 767px) {
         width: 100%;
+        max-width: 345px;
         text-align: center;
     }
 }
@@ -581,11 +612,15 @@ li.nav-item .dropdown-item {
 #aside .box.bg {
     background: $primary-bg;
     border-radius: 20px 0px 20px 0px;
+    width: 100%;
+    max-width: 335px;
     @media (max-width: 1199px) {
         padding: 1rem 2rem;
+        padding-top: 2rem;
     }
     @media (max-width: 991px) {
         padding: 0.5rem 1rem;
+        padding-top: 1.5rem;
     }
     @media (max-width: 767px) {
         width: 100%;

@@ -564,6 +564,41 @@ li.nav-item .dropdown-item {
   margin-bottom: .5rem;
 }
 
+/*Section Page Serviços*/
+#section-servicos {
+  padding-top: 0rem;
+}
+
+#section-servicos .sub-title {
+  font-size: 21px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  color: #507864;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+#section-servicos .section-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: self-start;
+      -ms-flex-align: self-start;
+          align-items: self-start;
+  margin-bottom: 4rem;
+}
+
+#section-servicos .section-box .icon {
+  padding-right: 2rem;
+}
+
+#section-servicos .section-box .icon img {
+  max-width: 175px;
+}
+
 /*Aside*/
 #aside {
   display: -webkit-box;

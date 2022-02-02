@@ -48,7 +48,6 @@ $scroll-color-border: #fab519;
 $preloader-color-bg: white;
 $preloader-color-bg-loading: #fab519;
 
-
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 13h22M4 19h22'/%3e%3c/svg%3e") !important;
 
 /*Theme*/
@@ -566,6 +565,142 @@ li.nav-item .dropdown-item {
 #section-qualidade .section-box {
     margin-bottom: 4rem;
 }
+
+
+/*Section Page Blog*/
+#section-page-blog {
+    padding-top: 0rem;
+}
+
+#section-page-blog .data {
+    font-size: 18px;
+    color: #c8c8d7;
+}
+
+#section-page-blog .sub-title {
+    font-size: 26px;
+    font-family: $font-subtitle;
+    font-weight: 400;
+    color: $color-subtitle;
+    margin-top:0; 
+    margin-bottom: .5rem;
+    font-style: italic;
+}
+
+#section-page-blog .section-box {
+    margin-bottom: 4rem;
+}
+
+#section-page-blog .section-box .link {
+    border: 2px solid #000;
+    border-radius: 10px 0px 10px 0px;
+    padding: 0.3rem 0.8rem;
+    color: $primary-color;
+    font-weight: 800;
+    font-size: 21px;
+    margin-top: .5rem;
+    display: inline-block;
+    &:hover {
+        background-color: $second-color;
+    }
+}
+
+//Acordion
+#accordion .accordion-item {
+    border: 0px solid;
+    margin-bottom: 1.5rem;
+}
+
+#accordion button {
+    font-family: $font-title;
+    font-size: 21px;
+    color: #464655;
+    background-color: #fff;
+    border-bottom: 2px solid $primary-color;
+    font-weight: 600;
+}
+
+#accordion .accordion-item .accordion-header .accordion-button:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+#accordion .accordion-button::after {
+    background-image: url(../images/icone-seta-passar-slide-amarelo-cima.webp);
+}
+
+.accordion-body {
+    font-family: $font-title;
+    font-size: 18px;
+    color: #464655;
+}
+
+/*Section-Transportes*/
+#section-transportes {
+    padding-top: 0rem;
+}
+
+#section-transportes .sub-title {
+    margin-bottom: .5rem;
+}
+
+#section-transportes .bg {
+    padding: 4rem;
+    background: $primary-bg;
+    margin: 4rem 0;
+}
+
+#section-transportes .bg .sub-title {
+    font-size: 48px;
+    font-family: $font-subtitle;
+    font-weight: 100;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+//Mapa
+#mapa-svg{
+    width: 1200px;
+}
+
+#mapa-svg text{
+    font-size: 12px;
+    fill: $second-color;
+}
+
+#mapa-svg .circle {
+    fill: $primary-color;
+}
+
+.mapa-svg-estados {
+    fill: #fff;
+    stroke:$primary-color;
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -ms-transition: .8s ease;
+    -o-transition: .8s ease;
+    transition: .8s ease;
+    
+
+}
+
+.mapa-svg-estados:hover  {
+
+    /*opacity: 0.6;*/
+    cursor: pointer;
+    stroke:#fff;
+    fill: $second-color;
+    stroke-dashoffset: 0%;
+
+} 
+
+.mapa-svg-estados.active  {
+
+    fill: $primary-color;
+
+} 
 
 /*Aside*/
 #aside {

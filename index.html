@@ -45,7 +45,23 @@
 </head>
 <body>
 
-    <h1 style="display: none;">Nacional Transportes</h1>    
+    <h1 style="display: none;">Nacional Transportes</h1> 
+    
+    <!-- popup -->
+    <div class="modal fade popup" tabindex="-1"> 
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <a href="">
+                        <img src="images/logo-nacional-transportes.png" alt="" width="100%">
+                    </a>
+                </div>
+             </div>
+        </div>
+    </div>
 
     <!-- Preloader -->
     <div id="preloader">
@@ -77,8 +93,8 @@
                     <ul class="navbar-nav me-auto mb-2">
                         <!--li class="nav-item scroll"><a class="nav-link" aria-current="page" href="#home">Home</a></li-->
                         <li class="nav-item"><a class="nav-link" href="empresa.html">Empresa</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
+                        <!--li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="servicos.html" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown01">
                               <li><a class="dropdown-item" href="transporte-de-veiculos.html">Transporte de Veículos</a></li>
                               <li><a class="dropdown-item" href="transportes-de-motos.html">Transporte de Motos</a></li>
@@ -86,7 +102,8 @@
                               <li><a class="dropdown-item" href="transportes-com-slider.html">Transporte com Sider</a></li>
                               <li><a class="dropdown-item" href="transportes-aereo-de-veiculos.html">Transporte Aéreo de Veículos</a></li>
                             </ul>
-                        </li>
+                        </li-->
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
                         <li class="nav-item"><a class="nav-link" href="transportes.html">Transportes</a></li>
                         <li class="nav-item"><a class="nav-link" href="duvidas-frequentes.html">Dúvidas</a></li>
                         <li class="nav-item"><a class="nav-link" href="qualidade.html">Qualidade</a></li>
@@ -674,7 +691,14 @@ segurança em todos os aspectos.
 	<script src="library/owlcarousel/owl.carousel.min.js"></script>    
 
     <!-- SCRIPTS -->
-    <script src="library/scripts.js"></script>
+    <script src="library/scripts.js"></script>    
+
+    <!--Modal-Pop-up-->
+    <script type="text/javascript">
+        $(window).on('load',function(){
+          $('.popup').modal('hide');
+        });
+      </script>
 
 </body>
 </html>

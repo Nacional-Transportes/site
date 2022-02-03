@@ -155,1079 +155,566 @@
 
             <div class="container">
 
-                <div class="row">
+                <div id="mapa-estado-selecionado" class="row row-mapa">
                     <div class="col-md-4">
 
-
-
-
-
                         <div class="box-transporte-itens">
-                            <h2 id="mensagem" style="color: #000"></h2>
+                            <h1 class="title" id="mensagem"></h1>
 
-                            <div class="federacao todos">
-                                <a style="color: red;" onclick="carrega('to');" xlink:href="#to" id="tomp"
-                                    class="linkestado">
-                                    TOCA
-                                </a>
+                            <div class="estado todos">
+                                <a onclick="carrega('Acre');" class="link-sigla">AC</a>
+                                <a onclick="carrega('Alagoas');" class="link-sigla">AL</a>
+                                <a onclick="carrega('Amazonas');" class="link-sigla">AM</a>
+                                <a onclick="carrega('Amapá');" class="link-sigla">AP</a>
+                                <a onclick="carrega('Bahia');" class="link-sigla">BA</a>
+                                <a onclick="carrega('Ceará');" class="link-sigla">CE</a>
+                                <a onclick="carrega('Distrito Federal');" class="link-sigla">DF</a>
+                                <a onclick="carrega('Espírito Santo');" class="link-sigla">ES</a>
+                                <a onclick="carrega('Góias');" class="link-sigla">GO</a>
+                                <a onclick="carrega('Maranhão');" class="link-sigla">MA</a>
+                                <a onclick="carrega('Mato Grosso');" class="link-sigla">MT</a>
+                                <a onclick="carrega('Mato Grosso do Sul');" class="link-sigla">MS</a>
+                                <a onclick="carrega('Minas Gerais');" class="link-sigla">MG</a>
+                                <a onclick="carrega('Pará');" class="link-sigla">PA</a>
+                                <a onclick="carrega('Paraíba');" class="link-sigla">PB</a>
+                                <a onclick="carrega('Pernambuco');" class="link-sigla">PE</a>
+                                <a onclick="carrega('Piauí');" class="link-sigla">PI</a>
+                                <a onclick="carrega('Paraná');" class="link-sigla">PR</a>
+                                <a onclick="carrega('Rio de Janeiro');" class="link-sigla">RJ</a>
+                                <a onclick="carrega('Rio Grande do Norte');" class="link-sigla">RN</a>
+                                <a onclick="carrega('Rondônia');" class="link-sigla">RO</a>
+                                <a onclick="carrega('Roraima');" class="link-sigla">RR</a>
+                                <a onclick="carrega('Rio Grande do Sul');" class="link-sigla">RS</a>
+                                <a onclick="carrega('Santa Catarina');" class="link-sigla">SC</a>
+                                <a onclick="carrega('Sergipe');" class="link-sigla">SE</a>
+                                <a onclick="carrega('São Paulo');" class="link-sigla">SP</a>
+                                <a onclick="carrega('Tocantins');" class="link-sigla">TO</a>
                             </div>
 
-                            <div class="federacao ac" style="display: none">
+                            <div class="estado Acre" style="display: none">
                                 <h2 class="sub-title">Rio Branco</h2>
                                 <p class="paragraph">
-                                    Br 364 km 04 Ramal do Gavião
-                                    <br>
-                                    Belo Jardim - CEP 69.900-000
+                                    Br 364 km 04 Ramal do Gavião, Belo Jardim - CEP 69.900-000
                                 </p>
                             </div>
 
-                            <div class="federacao al" style="display: none">
+                            <div class="estado Alagoas" style="display: none">
                                 <h2 class="sub-title">Maceió</h2>
                                 <p class="paragraph">
-                                    Avenida Deputado Serzedelo de Barros Correia, Nº 7293
-                                    <br>
-                                    Tabuleiro dos Martins - CEP: 57.052-790
+                                    Avenida Deputado Serzedelo de Barros Correia, Nº 7293, Tabuleiro dos Martins - CEP: 57.052-790
                                 </p>
                             </div>
 
-                            <div class="federacao am" style="display: none">
+                            <div class="estado Amazonas" style="display: none">
                                 <h2 class="sub-title">Manaus</h2>
                                 <p class="paragraph">
-                                    Av. Flamboyant
-                                    <br>
-                                    Distrito Industrial - CEP 69.075-843
+                                    Av. Flamboyant, Distrito Industrial - CEP 69.075-843
                                 </p>
                             </div>
 
-                            <div class="federacao ap" style="display: none">
+                            <div class="estado Amapá" style="display: none">
                                 <h2 class="sub-title">Macapá</h2>
                                 <p class="paragraph">
-                                    Rua Brigadeiro Hélio Costa, Nº 847
-                                    <br>
-                                    Infraero 1 - CEP: 68.908-877
+                                    Rua Brigadeiro Hélio Costa, Nº 847, Infraero 1 - CEP: 68.908-877
                                 </p>
                             </div>
 
-                            <div class="federacao ba" style="display: none">
+                            <div class="estado Bahia" style="display: none">
                                 <h2 class="sub-title">Barreiras</h2>
                                 <p class="paragraph">
-                                    Rua Brigadeiro Hélio Costa, Nº 847
-                                    <br>
-                                    Infraero 1 - CEP: 68.908-877
+                                    Rua Brigadeiro Hélio Costa, Nº 847, Infraero 1 - CEP: 68.908-877
                                 </p>
                                 <h2 class="sub-title">Caetité</h2>
                                 <p class="paragraph">
-                                    Rua Anhanguera - Buenos Aires, N° 100 
-                                    <br>
-                                    CEP: 46.400-000
+                                    Rua Anhanguera - Buenos Aires, N° 100, CEP: 46.400-000
                                 </p>
                                 <h2 class="sub-title">Eunápolis</h2>
                                 <p class="paragraph">
-                                    Avenida Bahia, N° 09 - Vivendas Costa Azul
-                                    <br>
-                                    CEP: 45.820-620
+                                    Avenida Bahia, N° 09 - Vivendas Costa Azul, CEP: 45.820-620
                                 </p>
                                 <h2 class="sub-title">Feira de Santana</h2>
                                 <p class="paragraph">
-                                    Avenida Transnordestina, Nº 2590
-                                    <br>
-                                    Parque Ipê - CEP: 44.054-008
+                                    Avenida Transnordestina, Nº 2590, Parque Ipê - CEP: 44.054-008
                                 </p>
                                 <h2 class="sub-title">Guanambi</h2>
                                 <p class="paragraph">
-                                    Rua Dois – Caiçara
-                                    <br>
-                                    CEP 46430-000
+                                    Rua Dois – Caiçara, CEP 46430-000
                                 </p>
                                 <h2 class="sub-title">Irecê</h2>
                                 <p class="paragraph">
-                                    Rua Rosa Lopes Soares
-                                    <br>
-                                    São José CEP: 44.900-000
+                                    Rua Rosa Lopes Soares, São José CEP: 44.900-000
                                 </p>
                                 <h2 class="sub-title">Itabuna</h2>
                                 <p class="paragraph">
-                                    Av. Antônio Carlos Magalhães - Centro Comercial
-                                    <br>
-                                    Térreo - CEP: 45600-298
+                                    Av. Antônio Carlos Magalhães - Centro Comercial, Térreo - CEP: 45600-298
                                 </p>
                                 <h2 class="sub-title">Jequié</h2>
                                 <p class="paragraph">
-                                    Rua A - Cidade Nova
-                                    <br>
-                                    CEP: 45.201-590
+                                    Rua A - Cidade Nova, CEP: 45.201-590
                                 </p>
                                 <h2 class="sub-title">Salvador</h2>
                                 <p class="paragraph">
-                                    Rua da Indonésia Granjas Rurais Presidente Vargas
-                                    <br>
-                                    Salvador - BA, Brasil
+                                    Rua da Indonésia Granjas Rurais Presidente Vargas, Salvador - BA, Brasil
                                 </p>
                                 <h2 class="sub-title">Santa Maria da Vitória</h2>
                                 <p class="paragraph">
-                                    Rua Francisco Coimbra , Casa A - N° 469
-                                    <br>
-                                    CEP: 47.640-000
+                                    Rua Francisco Coimbra , Casa A - N° 469, CEP: 47.640-000
                                 </p>
                                 <h2 class="sub-title">Santo Antônio de Jesus</h2>
                                 <p class="paragraph">
-                                    Loteamento Sol Nascente
-                                    <br>
-                                    Barro Vermelho - CEP: 44.571-790
+                                    Loteamento Sol Nascente, Barro Vermelho - CEP: 44.571-790
                                 </p>
                                 <h2 class="sub-title">Teixeira de Freitas</h2>
                                 <p class="paragraph">
-                                    Rua Lisboa - Monte Castelo
-                                    <br>
-                                    CEP: 45.990-093
+                                    Rua Lisboa - Monte Castelo, CEP: 45.990-093
                                 </p>
                                 <h2 class="sub-title">Vitória da Conquista</h2>
                                 <p class="paragraph">
-                                    Rodovia BR 263, N° 30 - Ayrton Senna
-                                    <br>
-                                    CEP: 45.000-000
+                                    Rodovia BR 263, N° 30 - Ayrton Senna, CEP: 45.000-000
                                 </p>
                             </div>
                             
-                            <div class="federacao ce" style="display: none">
+                            <div class="estado Ceará" style="display: none">
                                 <h2 class="sub-title">Fortaleza</h2>
                                 <p class="paragraph">
-                                    Rua Dr. Pedro Rocha - Aerolândia - Nº450
-                                    <br>
-                                    CEP: 60.851-032
+                                    Rua Dr. Pedro Rocha - Aerolândia - Nº450, CEP: 60.851-032
                                 </p>
                                 <h2 class="sub-title">Jaguaribe</h2>
                                 <p class="paragraph">
-                                    Rua Sete de Setembro - Centro, Nº 137
-                                    <br>
-                                    CEP: 63.475-000
+                                    Rua Sete de Setembro - Centro, Nº 137, CEP: 63.475-000
                                 </p>
                                 <h2 class="sub-title">Juazeiro do Norte</h2>
                                 <p class="paragraph">
-                                    Rua José Tomáz de Menezes - N°481
-                                    <br>
-                                    Limoeiro-CEP: 63030-075
+                                    Rua José Tomáz de Menezes - N°481, Limoeiro-CEP: 63030-075
                                 </p>
                                 <h2 class="sub-title">Sobral</h2>
                                 <p class="paragraph">
-                                    Rua Sousa Aguiar, N º26 - Sinhá Samboiá
-                                    <br>
-                                    CEP: 62050-382
+                                    Rua Sousa Aguiar, N º26 - Sinhá Samboiá, CEP: 62050-382
                                 </p>
                             </div>
 
-                            <div class="federacao df" style="display: none">
+                            <div class="estado Distrito Federal" style="display: none">
                                 <h2 class="sub-title">Brasília</h2>
                                 <p class="paragraph">
-                                    Rua 8, Chácara 202, Lote 16 - Vicente Pires
-                                    <br>
-                                    CEP: 71.705-522
+                                    Rua 8, Chácara 202, Lote 16 - Vicente Pires, CEP: 71.705-522
                                 </p>
                             </div>
 
-                            <div class="federacao es" style="display: none">
+                            <div class="estado Espírito Santo" style="display: none">
                                 <h2 class="sub-title">Cachoeiro de Itapemirim</h2>
                                 <p class="paragraph">
-                                    Rua Doutor Amilcar Figliuzzi, Coronel Borges- Nº130
-                                    <br>
-                                    CEP:29306-216
+                                    Rua Doutor Amilcar Figliuzzi, Coronel Borges- Nº130, CEP:29306-216
                                 </p>
                                 <h2 class="sub-title">Cariacica</h2>
                                 <p class="paragraph">
-                                    Avenida dos Camarás, Nº 459
-                                    <br>
-                                    Santo Antônio CEP: 29156-837
+                                    Avenida dos Camarás, Nº 459, Santo Antônio CEP: 29156-837
                                 </p>
                             </div>
                             
-                            <div class="federacao go" style="display: none">
+                            <div class="estado Góias" style="display: none">
                                 <h2 class="sub-title">Goiânia</h2>
                                 <p class="paragraph">
-                                    Rodovia BR - 153 - Vila Alto da Gloria, Km 1282
-                                    <br>
-                                    Qd. 21, Lot 18 sala 1
+                                    Rodovia BR - 153 - Vila Alto da Gloria, Km 1282, Qd. 21, Lot 18 sala 1
                                 </p>
                             </div>
                             
-                            <div class="federacao ma" style="display: none">
+                            <div class="estado Maranhão" style="display: none">
                                 <h2 class="sub-title">Imperatriz</h2>
                                 <p class="paragraph">
-                                    Rua Alagoas, Nº 1440 , Mercadinho
-                                    <br>
-                                    CEP: 65.903-330
+                                    Rua Alagoas, Nº 1440 , Mercadinho, CEP: 65.903-330
                                 </p>
                                 <h2 class="sub-title">São Luís</h2>
                                 <p class="paragraph">
-                                    Rua Nova Jerusalém, Jardim São Cristóvão
-                                    <br>
-                                    Nº73, Qd. 223 - CEP:65.055-380
+                                    Rua Nova Jerusalém, Jardim São Cristóvão, Nº73, Qd. 223 - CEP:65.055-380
                                 </p>
                             </div>
 
-                            <div class="federacao ro" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>APVMB – Associação Porto Velho Masters Basquetebol</h4>
-                                    <p>
-                                        Presidente: Gustavo Adolfo Añez Menacho<br />
-                                        <i class="fa fa-phone"></i> (69) 3224-6287<br />
-                                        <i class="fa fa-phone"></i> (69) 999 945 697/ (69) 984 512
-                                        685<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(69) 3224-6287"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Telefone :  APVMB – Associação Porto Velho Masters Basquetebol&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar telefone</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="tel:(69) 999 945 697/ (69) 984 512 685"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  APVMB – Associação Porto Velho Masters Basquetebol&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  APVMB – Associação Porto Velho Masters Basquetebol&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao ma" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>AMBM/MA – Associação Maranhense de Basquetebol Master</h4>
-                                    <p>
-                                        Presidente: Selma Maria Pachêco Pinto<br />
-                                        <i class="fa fa-phone"></i> (98) 988 389 460/ (98) 985 248
-                                        224<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(98) 988 389 460/ (98) 985 248 224"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  AMBM/MA – Associação Maranhense de Basquetebol Master&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  AMBM/MA – Associação Maranhense de Basquetebol Master&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                            
+                            <div class="estado Mato Grosso" style="display: none">
+                                <h2 class="sub-title">Barra dos Garças</h2>
+                                <p class="paragraph">
+                                    Avenida Projetada, Nº 16, Residencial Tamburi, CEP:78.600-000
+                                </p>
+                                <h2 class="sub-title">Cuiabá</h2>
+                                <p class="paragraph">
+                                    Av. Fernando Correa da Costa, Nº 10525, Jardim Passaredo, CEP:78.088-802
+                                </p>
+                                <h2 class="sub-title">Juína</h2>
+                                <p class="paragraph">
+                                    Av. Mato Grosso, Nº 1474, Modulo 05. CEP: 78.320-000
+                                </p>
+                                <h2 class="sub-title">Lucas do Rio Verde</h2>
+                                <p class="paragraph">
+                                    Av. Macapá, Nº 395, Industrial, CEP: 78.455-000
+                                </p>
+                                <h2 class="sub-title">Rondonópolis</h2>
+                                <p class="paragraph">
+                                    Alameda das Dálias, Nº 129, Colina Verde. CEP: 78.740-440
+                                </p>
+                                <h2 class="sub-title">Sinop</h2>
+                                <p class="paragraph">
+                                    Rua Dirson José Martins, Nº 645, Setor Industrial. CEP: 78.557-168
+                                </p>
+                                <h2 class="sub-title">Tangará da Serra</h2>
+                                <p class="paragraph">
+                                    Avenida Lion Internacional, Nº 2593, Vila Esmeralda - CEP: 78.300-000
+                                </p>
                             </div>
 
-                            <div class="federacao pb" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>
-                                        AVAB/PB – Associação dos Veteranos e Amigos do Basquetebol
-                                        da Paraíba
-                                    </h4>
-                                    <p>
-                                        Presidente: Leandro Jorge de Sousa Marinho <br />
-                                        <i class="fa fa-phone"></i> (83) 988 515 027<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(83) 988 515 027"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  AVAB/PB – Associação dos Veteranos e Amigos do Basquetebol da Paraíba&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  AVAB/PB – Associação dos Veteranos e Amigos do Basquetebol da Paraíba&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="estado Mato Grosso do Sul" style="display: none">
+                                <h2 class="sub-title">Campo Grande</h2>
+                                <p class="paragraph">
+                                    Rua Vicente Solari, Nº 607 - Vila Bandeirantes, CEP: 79006-440
+                                </p>
+                                <h2 class="sub-title">Dourados</h2>
+                                <p class="paragraph">
+                                    Avenida Weimar Gonçalves Torres, Nº 5001, Vila São Francisco - CEP: 79.833-021
+                                </p>
+                                <h2 class="sub-title">São Gabriel do Oeste</h2>
+                                <p class="paragraph">
+                                    Rua João Almeida Sampaio, Nº 406, Jardim Gramado - CEP: 79.490-000
+                                </p>
+                                <h2 class="sub-title">Três Lagoas</h2>
+                                <p class="paragraph">
+                                    Rua Bruno Garcia, Nº 3139, Jardim Angélica - CEP: 79.611-050
+                                </p>
                             </div>
-                            <div class="federacao sc" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>ABBLU – Associação de Basquete de Blumenau</h4>
-                                    <p>
-                                        Presidente: Alex Segala<br />
-                                        <i class="fa fa-phone"></i> (47) 3361 3279<br />
-                                        <i class="fa fa-phone"></i> (47) 999 851 775<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(47) 3361 3279"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Telefone :  ABBLU – Associação de Basquete de Blumenau&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar telefone</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="tel:(47) 999 851 775"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  ABBLU – Associação de Basquete de Blumenau&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  ABBLU – Associação de Basquete de Blumenau&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                            
+                            <div class="estado Minas Gerais" style="display: none">
+                                <h2 class="sub-title">Betim</h2>
+                                <p class="paragraph">
+                                    Rua Andradas , Nº 10, Jardim Teresópolis, CEP: 32.681-218
+                                </p>
+                                <h2 class="sub-title">Governador Valadares</h2>
+                                <p class="paragraph">
+                                    Rua João Lopes da Silva, Nº 674, Vila Bretas - CEP: 35.032-210
+                                </p>
+                                <h2 class="sub-title">Ipatinga</h2>
+                                <p class="paragraph">
+                                    Av. José Julio Costa, Nº 1160, Iguaçu - CEP: 35.162-036
+                                </p>
+                                <h2 class="sub-title">Juíz de Fora</h2>
+                                <p class="paragraph">
+                                    Rua Fernando Lamarca , Nº 80, Distrito Industrial - CEP: 36092-030
+                                </p>
+                                <h2 class="sub-title">Lavras</h2>
+                                <p class="paragraph">
+                                    Av. do sol - Nº 478, Morada do Sol, CEP: 37.200-000
+                                </p>
+                                <h2 class="sub-title">Montes Claros</h2>
+                                <p class="paragraph">
+                                    Avenida Dulce Sarmento, Nº 1632, Vila Ipiranga - CEP: 39.401-485
+                                </p>
+                                <h2 class="sub-title">Pouso Alegre</h2>
+                                <p class="paragraph">
+                                    Avenida Erickson Flávio da Silva, Nº 2485 Vista Alegre, CEP: 37.550-000
+                                </p>
+                                <h2 class="sub-title">Teófilo Otoni</h2>
+                                <p class="paragraph">
+                                    Rua Miriam, Nº 585 - São Cristóvão, CEP: 39804-531
+                                </p>
+                                <h2 class="sub-title">Uberaba</h2>
+                                <p class="paragraph">
+                                    Avenida Thomas Bawden Camargos, Nº210, Amoroso Costa - CEP: 38072-400
+                                </p>
+                                <h2 class="sub-title">Uberlândia</h2>
+                                <p class="paragraph">
+                                    Avenida Antônio Thomaz Ferreira Rezende, Nº185 - Marta Helena - CEP: 38402-236
+                                </p>
+                                <h2 class="sub-title">Varginha</h2>
+                                <p class="paragraph">
+                                    Avenida Minas Gerais, Nº 526 - Rezende, CEP: 37.062-190
+                                </p>
                             </div>
-                            <div class="federacao sp" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>CAMPINAS BASQUETE MASTER</h4>
-                                    <p>
-                                        Presidente: Fábio Stefani<br />
-                                        <i class="fa fa-phone"></i> (19) 3342 6182 <br />
-                                        <i class="fa fa-phone"></i> (19) 992 946 182 <br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(19) 3342 6182"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Telefone :  CAMPINAS BASQUETE MASTER&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar telefone</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="tel: (19) 992 946 182"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  CAMPINAS BASQUETE MASTER&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  CAMPINAS BASQUETE MASTER&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+
+                            <div class="estado Pará" style="display: none">
+                                <h2 class="sub-title">Altamira</h2>
+                                <p class="paragraph">
+                                    Avenida Perimetral, Nº 2660, Sudam II - CEP: 68374-274
+                                </p>
+                                <h2 class="sub-title">Itaituba</h2>
+                                <p class="paragraph">
+                                    Rua Maranhão, Nº 870, Bela Vista - CEP: 68.180-410
+                                </p>
+                                <h2 class="sub-title">Marabá</h2>
+                                <p class="paragraph">
+                                    Av. Carajas, Nº 12 A - Nova Maraba, CEP: 68508-970
+                                </p>
+                                <h2 class="sub-title">Marituba</h2>
+                                <p class="paragraph">
+                                    Rod. BR 316 km 13, Sala A - Decouville, CEP: 67.200-000
+                                </p>
+                                <h2 class="sub-title">Paraupebas</h2>
+                                <p class="paragraph">
+                                    Rua Carajas LT 1- Parque Carajas, CEP: 68.515-000
+                                </p>
+                                <h2 class="sub-title">Santarém</h2>
+                                <p class="paragraph">
+                                    Av. Maican, s/n - Prainha, CEP: 68.040-420
+                                </p>
+                            </div>
+
+                            <div class="estado Paraíba" style="display: none">
+                                <h2 class="sub-title">Cajazeiras</h2>
+                                <p class="paragraph">
+                                    Rua Antônio Felix Rolim Albuquerque, Nº 190 - Remédios, CEP: 58.900-000
+                                </p>
+                                <h2 class="sub-title">João Pessoa</h2>
+                                <p class="paragraph">
+                                    Rua João de Souza Lima, Nº 100, Valentina Figueiredo, CEP: 58063-100
+                                </p>
+                            </div>
+
+                            <div class="estado Pernambuco" style="display: none">
+                                <h2 class="sub-title">Caruaru</h2>
+                                <p class="paragraph">
+                                    Br 232 km 127, Vassoural, CEP: 55.034-640
+                                </p>
+                                <h2 class="sub-title">Jaboatão dos Guararapes</h2>
+                                <p class="paragraph">
+                                    Rodovia BR-101, km 18 - Prazeres, CEP: 54.335-000
+                                </p>
+                                <h2 class="sub-title">Petrolina</h2>
+                                <p class="paragraph">
+                                    Rua Dr. João Pessoa, N° 2399, Centro - CEP: 56.302-180
+                                </p>
+                                <h2 class="sub-title">Salgueiro</h2>
+                                <p class="paragraph">
+                                    Av. Recife, Nº 84, Nossa Senhora das Graças, CEP: 56.000-000
+                                </p>
+                            </div>
+
+                            <div class="estado Piauí" style="display: none">
+                                <h2 class="sub-title">Parnaíba</h2>
+                                <p class="paragraph">
+                                    Avenida Deputado Pinheiro Machado, N°864 - Pindorama, CEP: 64.212-045
+                                </p>
+                                <h2 class="sub-title">Picos</h2>
+                                <p class="paragraph">
+                                    Avenida Senador Helvídio Nunes, Nº 1933 - Junco, CEP: 64.600-000
+                                </p>
+                                <h2 class="sub-title">Teresina</h2>
+                                <p class="paragraph">
+                                    Avenida Industrial Gil Martins, N° 11269- Parque Pioneiro, CEP: 64.019-630
+                                </p>
+                            </div>
+                            
+                            <div class="estado Paraná" style="display: none">
+                                <h2 class="sub-title">Cascavel</h2>
+                                <p class="paragraph">
+                                    Rua Acre, Nº 250 - Country, CEP: 85.813-390
+                                </p>
+                                <h2 class="sub-title">Foz do Iguaçu</h2>
+                                <p class="paragraph">
+                                    Avenida Olímpio Rafagnin, Nº 2571, Parque Imperatriz, CEP: 85.862-210
+                                </p>
+                                <h2 class="sub-title">Guarapuava</h2>
+                                <p class="paragraph">
+                                    Avenida Prof. Pedro Carli, N° 5456 - Vila Carli, CEP: 85.040-005
+                                </p>
+                                <h2 class="sub-title">Londrina</h2>
+                                <p class="paragraph">
+                                    Rua Sapoti, Nº 94, Jardim Damasco, CEP: 86.035-060
+                                </p>
+                                <h2 class="sub-title">Maringá</h2>
+                                <p class="paragraph">
+                                    Avenida Colombo, Nº 3706 - Zona 07, CEP: 87.030-120
+                                </p>
+                            </div>
+
+                            <div class="estado Rio de Janeiro" style="display: none">
+                                <h2 class="sub-title">Barra Mansa</h2>
+                                <p class="paragraph">
+                                    Rodovia Presidente Dutra, N º285, KM 290 - Floriano, CEP: 27.365-000
+                                </p>
+                                <h2 class="sub-title">Campo dos Goytacazes</h2>
+                                <p class="paragraph">
+                                    Rua Itaperuna, Nº 57, Parque Guarus, CEP: 28.070-085
+                                </p>
+                                <h2 class="sub-title">Macaé</h2>
+                                <p class="paragraph">
+                                    Rua Sidnei Vasconcelos Aguiar, Nº 1047 - Glória, CEP: 27.937-010
+                                </p>
+                                <h2 class="sub-title">Rio de Janeiro</h2>
+                                <p class="paragraph">
+                                    Rua Sá Freire, Nº 127, São Cristóvão - CEP: 20930-430
+                                </p>
+                            </div>
+
+                            <div class="estado Rio Grande do Norte" style="display: none">
+                                <h2 class="sub-title">Mossoró</h2>
+                                <p class="paragraph">
+                                    Rua Bernardino Martins Veras , Nº 4, Presidente Costa e Silva, CEP: 59.625-614
+                                </p>
+                                <h2 class="sub-title">Natal</h2>
+                                <p class="paragraph">
+                                    Avenida Antoine de Saint' Exupéry, S/N- Pitimbu, CEP: 59.066-430
+                                </p>
+                            </div>
+
+                            <div class="estado Rondônia" style="display: none">
+                                <h2 class="sub-title">Cacoal</h2>
+                                <p class="paragraph">
+                                    Avenida Castelo Branco, Nº 18265 - Santo Antônio, CEP: 76.967-385
+                                </p>
+                                <h2 class="sub-title">Ji-Paraná</h2>
+                                <p class="paragraph">
+                                    Rua Dr. Fiel, Nº 1476, Primavera - CEP: 76.914-868
+                                </p>
+                                <h2 class="sub-title">Pimenta Bueno</h2>
+                                <p class="paragraph">
+                                    Rua Rolim de Moura, Nº 23 - Pioneiros, CEP: 76.970-000
+                                </p>
+                                <h2 class="sub-title">Porto Velho</h2>
+                                <p class="paragraph">
+                                    Avenida Mamoré, Nº 954, Três Marias - CEP: 76.812-415
+                                </p>
+                                <h2 class="sub-title">Presidente Médici</h2>
+                                <p class="paragraph">
+                                    Avenida 30 de junho, N° 811, Centro - CEP: 78.968-000
+                                </p>
+                            </div>
+                            
+                            <div class="estado Roraima" style="display: none">
+                                <h2 class="sub-title">Boa Vista</h2>
+                                <p class="paragraph">
+                                    Rua Dona Marina Carneiro, N º 449, Cinturão Verde - CEP: 69.312-363
+                                </p>
                             </div>
 
                             
-                            
-
-                            <div class="federacao rj" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>COMBINADO COPACABANA</h4>
-                                    <p>
-                                        Presidente: Gerosimi Bosikis<br />
-                                        <i class="fa fa-phone"></i> (21) 995 452 527<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(21) 995 452 527"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  COMBINADO COPACABANA&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  COMBINADO COPACABANA&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao pe" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>
-                                        AVB/PE – Associação de Veteranos de Basketball de Pernambuco
-                                    </h4>
-                                    <p>
-                                        Presidente: Cláudio Marcos Monteiro da Silva<br />
-                                        <i class="fa fa-phone"></i> (81) 996 464 141<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(81) 996 464 141"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  AVB/PE – Associação de Veteranos de Basketball de Pernambuco&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  AVB/PE – Associação de Veteranos de Basketball de Pernambuco&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao mg" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>
-                                        AVBMG – Associação dos Veteranos de Basquete de Minas Gerais
-                                    </h4>
-                                    <p>
-                                        Presidente: Walter Eddy Rohlfs<br />
-                                        <i class="fa fa-phone"></i> (31) 999 813 976<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(31) 999 813 976"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  AVBMG – Associação dos Veteranos de Basquete de Minas Gerais&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  AVBMG – Associação dos Veteranos de Basquete de Minas Gerais&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao sp" style="display: table">
-                                <div class="col-md-10">
-                                    <h4>
-                                        UVB/SP – União dos Veteranos de Basquete do Estado de São
-                                        Paulo
-                                    </h4>
-                                    <p>
-                                        Presidente: Roberto de Carvalho Chaud<br />
-                                        <i class="fa fa-phone"></i> (11) 981 797 492<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(11) 981 797 492"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  UVB/SP – União dos Veteranos de Basquete do Estado de São Paulo&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  UVB/SP – União dos Veteranos de Basquete do Estado de São Paulo&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao ms" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>
-                                        ABVMS – Associação de Basquetebol Veterano de Mato Grosso do
-                                        Sul
-                                    </h4>
-                                    <p>
-                                        Presidente: Gilzanio Rodrigues<br />
-                                        <i class="fa fa-phone"></i> (67) 984 113 050<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(67) 984 113 050"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  ABVMS – Associação de Basquetebol Veterano de Mato Grosso do Sul&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  ABVMS – Associação de Basquetebol Veterano de Mato Grosso do Sul&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao pr" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>APBM – Associação Paranaense de Basquetebol Master</h4>
-                                    <p>
-                                        Presidente: Josemar Ribas<br />
-                                        <i class="fa fa-phone"></i> (41) 4106 1194<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(41) 4106 1194"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Telefone :  APBM – Associação Paranaense de Basquetebol Master&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar telefone</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  APBM – Associação Paranaense de Basquetebol Master&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao pa" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>APBM – Associação Paraense de Basquetebol Master</h4>
-                                    <p>
-                                        Presidente: Paulo Fernando Seráfico de Assis Carvalho <br />
-                                        <i class="fa fa-phone"></i> (91) 983 001 933<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(91) 983 001 933"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  APBM – Associação Paraense de Basquetebol Master&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  APBM – Associação Paraense de Basquetebol Master&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao sp" style="display: table">
-                                <div class="col-md-10">
-                                    <h4>AVBS – Associação dos Veteranos de Santos</h4>
-                                    <p>
-                                        Presidente: Emerson Rodrigues Kohatsu<br />
-                                        <i class="fa fa-phone"></i> (13) 974 094 246<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(13) 974 094 246"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  AVBS – Associação dos Veteranos de Santos&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  AVBS – Associação dos Veteranos de Santos&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao rs" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>ABACS- Associação de Basketball de Caxias do Sul</h4>
-                                    <p>
-                                        Presidente: Eduardo Ferreira Costa<br />
-                                        <i class="fa fa-phone"></i> (54) 991 692 409<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(54) 991 692 409"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  ABACS- Associação de Basketball de Caxias do Sul&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  ABACS- Associação de Basketball de Caxias do Sul&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao rs" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>
-                                        AVBRS – Associação de Veteranos do Basquete do Rio Grande do
-                                        Sul
-                                    </h4>
-                                    <p>
-                                        Presidente: Matheus Francisco Saldanha Filho<br />
-                                        <i class="fa fa-phone"></i> (55) 996 144 394<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(55) 996 144 394"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  AVBRS – Associação de Veteranos do Basquete do Rio Grande do Sul&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  AVBRS – Associação de Veteranos do Basquete do Rio Grande do Sul&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao rs" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>ABPA – Associação de Basquete de Porto Alegre</h4>
-                                    <p>Presidente: Roberto Schwanke<br /></p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  ABPA – Associação de Basquete de Porto Alegre&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao sc" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>ABBLU – Associação Basquete de Blumenau</h4>
-                                    <p>
-                                        Presidente: Alex Segala<br />
-                                        <i class="fa fa-phone"></i> (47) 3361 3279<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(47) 3361 3279"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Telefone :  ABBLU – Associação Basquete de Blumenau&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar telefone</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  ABBLU – Associação Basquete de Blumenau&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao rj" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>
-                                        AVBN – Associação de Veteranos de Basquetebol de Niterói
-                                    </h4>
-                                    <p>
-                                        Presidente: Carlos Eduardo Caminha<br />
-                                        <i class="fa fa-phone"></i> (21) 976 095 003<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(21) 976 095 003"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  AVBN – Associação de Veteranos de Basquetebol de Niterói&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  AVBN – Associação de Veteranos de Basquetebol de Niterói&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao rj" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>
-                                        ABVRJ – Associação de Basquete de Veteranos do Rio de
-                                        Janeiro
-                                    </h4>
-                                    <p>
-                                        Presidente: Benedicto Cícero Torteli - "Paulista"<br />
-                                        <i class="fa fa-phone"></i> (21) 999 940 397<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(21) 999 940 397"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  ABVRJ – Associação de Basquete de Veteranos do Rio de Janeiro&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  ABVRJ – Associação de Basquete de Veteranos do Rio de Janeiro&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao rj" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>Combinado Rio de Basketball</h4>
-                                    <p>
-                                        Presidente: Ronaldo de F. Guimarães<br />
-                                        <i class="fa fa-phone"></i> (21) 999 687 031<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(21) 999 687 031"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  Combinado Rio de Basketball&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  Combinado Rio de Basketball&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="estado Rio Grande do Sul" style="display: none">
+                                <h2 class="sub-title">Passo Fundo</h2>
+                                <p class="paragraph">
+                                    Rua Dom Pedrito, Nº 767, Vera Cruz - CEP: 99.042-020
+                                </p>
+                                <h2 class="sub-title">Pelotas</h2>
+                                <p class="paragraph">
+                                    Rua Pracinha Hortêncio Rosa , Nº 842, Areal - CEP: 96.077-680
+                                </p>
+                                <h2 class="sub-title">Porto Alegre</h2>
+                                <p class="paragraph">
+                                    Avenida Presidente Getúlio Vargas, Nº 5017 - Maria Regina, CEP: 94.836-000
+                                </p>
+                                <h2 class="sub-title">Rio Grande</h2>
+                                <p class="paragraph">
+                                    Avenida Santos Dumont, Nº 479 - Vila Junção, CEP: 96.202-090
+                                </p>
                             </div>
 
-                            <div class="federacao pb" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>
-                                        ACBBM – Associação Cabo Branco de Basquetebol Master da
-                                        Paraíba
-                                    </h4>
-                                    <p>
-                                        Presidente: Jorge Daniel<br />
-                                        <i class="fa fa-phone"></i> (83) 998 872 141 / (83) 998 185
-                                        610<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel: (83) 998 872 141 / (83) 998 185 610"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  ACBBM – Associação Cabo Branco de Basquetebol Master da Paraíba&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  ACBBM – Associação Cabo Branco de Basquetebol Master da Paraíba&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao pb" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>
-                                        AVAB/PB – Associação dos Veteranos e Amigos do Basquetebol
-                                        da Paraíba
-                                    </h4>
-                                    <p>
-                                        Presidente: Balduino Gomes Viana Neto<br />
-                                        <i class="fa fa-map-marker"></i> Rua Bacharel Manoel Pereira
-                                        Diniz, 522 - Apto. 403 - Jardim Cidade Universitária - João
-                                        Pessoa - PB | Cep: 58.052-520 <br />
-                                        <i class="fa fa-phone"></i> 83 986609559<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:83 986609559"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  AVAB/PB – Associação dos Veteranos e Amigos do Basquetebol da Paraíba&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://maps.google.com/?q=Rua%20Bacharel%20Manoel%20Pereira%20Diniz,%20522%20-%20Apto.%20403%20-%20Jardim%20Cidade%20Universit%C3%A1ria%20-%20Jo%C3%A3o%20Pessoa%20-%20PB%20|%20Cep:%2058.052-520"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;mapa&#39;, &#39;Endereço - AVAB/PB – Associação dos Veteranos e Amigos do Basquetebol da Paraíba&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-map-marker"></i>
-                                                        <span>Ver mapa</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  AVAB/PB – Associação dos Veteranos e Amigos do Basquetebol da Paraíba&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao rn" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>
-                                        AVAB/RN – Associação dos Veteranos e Amigos do Basquete do
-                                        Rio Grande do Norte
-                                    </h4>
-                                    <p>
-                                        Presidente: Rodrigo Fernandes Wanderley<br />
-                                        <i class="fa fa-phone"></i> (84) 988 031 601<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(84) 988 031 601"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  AVAB/RN – Associação dos Veteranos e Amigos do Basquete do Rio Grande do Norte&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  AVAB/RN – Associação dos Veteranos e Amigos do Basquete do Rio Grande do Norte&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao ce" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>
-                                        AVAB/CE – Associação dos Veteranos e Amigos do Basquete do
-                                        Ceará
-                                    </h4>
-                                    <p>
-                                        Presidente: ALAN FRANK DO NASCIMENTO<br />
-                                        <i class="fa fa-phone"></i> (85) 996 875 900<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(85) 996 875 900"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  AVAB/CE – Associação dos Veteranos e Amigos do Basquete do Ceará&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  AVAB/CE – Associação dos Veteranos e Amigos do Basquete do Ceará&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao pi" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>APIBM/PI*</h4>
-                                    <p>Presidente: *(inativa)<br /></p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  APIBM/PI*&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="federacao mt" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>AMBM/MT – Associação Matogrossense de Basquete Master</h4>
-                                    <p>
-                                        Presidente: Augusto Cesar Werner Barbosa<br />
-                                        <i class="fa fa-phone"></i> (65) 993 021 000<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel:(65) 993 021 000"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  AMBM/MT – Associação Matogrossense de Basquete Master&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  AMBM/MT – Associação Matogrossense de Basquete Master&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="federacao ro" style="display: none">
-                                <div class="col-md-10">
-                                    <h4>
-                                        AVABRO – Associação dos Veteranos e Amigos do Basquetebol de
-                                        Rondônia
-                                    </h4>
-                                    <p>
-                                        Presidente: Fabrício Cantanhêde Canuto<br />
-                                        <i class="fa fa-phone"></i> (69) 993 383 817<br />
-                                    </p>
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <h5>Entre em contato:</h5>
-                                            <ul>
-                                                <li>
-                                                    <a href="tel: (69) 993 383 817"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;telefone&#39;, &#39;Celular :  AVABRO – Associação dos Veteranos e Amigos do Basquetebol de Rondônia&#39;);"
-                                                        class="btn opcoes" target="_blank"><i class="fa fa-phone"></i>
-                                                        <span>Ligar celular</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:"
-                                                        onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;button&#39;, &#39;email&#39;, &#39;E-mail  AVABRO – Associação dos Veteranos e Amigos do Basquetebol de Rondônia&#39;);"
-                                                        class="btn opcoes" target="_blank"><i
-                                                            class="fa fa-envelope"></i>
-                                                        <span>Enviar e-mail</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="estado Santa Catarina" style="display: none">
+                                <h2 class="sub-title">Chapecó</h2>
+                                <p class="paragraph">
+                                    Rua Neura Ramos, Nº 1625, Centro - CEP: 89.801-018
+                                </p>
+                                <h2 class="sub-title">Criciúma</h2>
+                                <p class="paragraph">
+                                    Rua Dindinha Aninha, Nº 1, Jardim América - CEP: 88.820-000
+                                </p>
+                                <h2 class="sub-title">Itajaí</h2>
+                                <p class="paragraph">
+                                    Rua Blumenau, Nº 2218, Barra do Rio - CEP: 88.305-104
+                                </p>
+                                <h2 class="sub-title">Joinville</h2>
+                                <p class="paragraph">
+                                    Rua Pascoal Filippi, Nº 415, Vila Nova - CEP: 89.214-600
+                                </p>
+                                <h2 class="sub-title">Lages</h2>
+                                <p class="paragraph">
+                                    Rodovia BR-282 KM 215, Nº 2895, Aeroporto - CEP: 88.506-600
+                                </p>
+                                <h2 class="sub-title">São José</h2>
+                                <p class="paragraph">
+                                    Rua Alcino Manoel da Silva, 680, Praia Comprida - CEP: 88.103-700
+                                </p>
                             </div>
 
-                           
+                            <div class="estado Sergipe" style="display: none">
+                                <h2 class="sub-title">Aracaju</h2>
+                                <p class="paragraph">
+                                    Avenida Maranhão, Nº 2126, Santos Dumont - CEP: 49.087-420
+                                </p>
+                            </div>
+
+                            <div class="estado São Paulo" style="display: none">
+                                <h2 class="sub-title">Andradina</h2>
+                                <p class="paragraph">
+                                    Rua Paranapanema, N° 1423, Stella Maris - CEP: 16.901-108
+                                </p>
+                                <h2 class="sub-title">Araçatuba</h2>
+                                <p class="paragraph">
+                                    Rua Cristiano Olsen, Nº 3633, Jardim do Prado - CEP: 16.025-413
+                                </p>
+                                <h2 class="sub-title">Araraquara</h2>
+                                <p class="paragraph">
+                                    Avenida Brasil, Nº 2055, Centro - CEP:14.801-050
+                                </p>
+                                <h2 class="sub-title">Bauru</h2>
+                                <p class="paragraph">
+                                    Rua Galvão de Castro, Nº 475, Vila Coralina - CEP: 17.030-026
+                                </p>
+                                <h2 class="sub-title">Botucatu</h2>
+                                <p class="paragraph">
+                                    Avenida Deputado Dante Delmanto, Nº 1680 - Vila Paulista, CEP: 18.608-393
+                                </p>
+                                <h2 class="sub-title">Marília</h2>
+                                <p class="paragraph">
+                                    Rua Ninfa Pietraroia, Nº 1175, Palmital - CEP: 17.511-350
+                                </p>
+                                <h2 class="sub-title">Ourinhos</h2>
+                                <p class="paragraph">
+                                    Rodovia Raposo Tavares, Nº 1868 - Vila Mano, CEP: 19.912-000
+                                </p>
+                                <h2 class="sub-title">Regente Feijó</h2>
+                                <p class="paragraph">
+                                    Rua José Gomes, Nº 918, Vila Nova - CEP: 19.570-000
+                                </p>
+                                <h2 class="sub-title">Ribeirão Preto</h2>
+                                <p class="paragraph">
+                                    Rua Anhangüera , Nº 307, Recreio Anhangüera, CEP: 14.097-100
+                                </p>
+                                <h2 class="sub-title">São Bernardo do Campo</h2>
+                                <p class="paragraph">
+                                    Rua Anita Malfatti, 141, CEP: 09.843-000
+                                </p>
+                                <h2 class="sub-title">São José do Rio Preto</h2>
+                                <p class="paragraph">
+                                    Rua João Conforti, Nº 402, Parque das Flores II, CEP: 15.051-017
+                                </p>
+                                <h2 class="sub-title">São José dos Campos</h2>
+                                <p class="paragraph">
+                                    R. Paraibuna, Nº 189, Centro - CEP: 12.245-760
+                                </p>
+                                <h2 class="sub-title">Sumaré</h2>
+                                <p class="paragraph">
+                                    Loteamento Industrial Veccon Zeta, Rua Ipê Amarelo 4305, Loteamento Industrial V, CEP: 13.178-903
+                                </p>
+                            </div>
+
+                            <div class="estado Tocantins" style="display: none">
+                                <h2 class="sub-title">Araguaína</h2>
+                                <p class="paragraph">
+                                    Avenida Bernardo Sayão, Nº 1261, JK CEP: 77.800-000
+                                </p>
+                                <h2 class="sub-title">Gurupi</h2>
+                                <p class="paragraph">
+                                    Rua Trinta e Um de Março, Nº 967 - St Central, CEP: 77.402-030
+                                </p>
+                                <h2 class="sub-title">Palmas</h2>
+                                <p class="paragraph">
+                                    Avenida Perimetral Norte, Nº 02- Jardim Aureny II, CEP: 77060-262
+                                </p>
+                                <h2 class="sub-title">Paraíso do Tocantins</h2>
+                                <p class="paragraph">
+                                    Avenida Transbrasiliana, Nº 54, St Central - CEP: 77.600-000
+                                </p>
+                                <h2 class="sub-title">Paraíso do Tocantins</h2>
+                                <p class="paragraph">
+                                    R. Alfredo Nasser, Nº 630, Centro - CEP: 77.600-000
+                                </p>
+                            </div>
+
                         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                     </div>
                     <div class="col-md-8">
@@ -1236,14 +723,14 @@
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 816 876"
                             style="enable-background:new 0 0 816 876;" xml:space="preserve">
                             <g>
-                                <a onclick="carrega('to');" xlink:href="#to" id="tomp" class="linkestado">
+                                <a onclick="carrega('Tocantins');" xlink:href="#mapa-estado-selecionado" id="tomp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M289.558,235.641
                                 c16.104,0.575,44.973-31.647,44.835-45.259c-0.136-13.612-17.227-58.446-22.349-66.088c-5.122-7.628-37.905,2.506-37.905,2.506
                                 S234.852,233.695,289.558,235.641z"></path>
                                     <text transform="matrix(1 0 0 1 287.0137 188.3208)" fill="#FFFFFF">TO</text>
                                 </a>
-                                <a onclick="carrega('ba');" xlink:href="#ba" id="bamp" class="linkestado">
+                                <a onclick="carrega('Bahia');" xlink:href="#mapa-estado-selecionado" id="bamp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round"
                                         d="M313.276,197.775
@@ -1257,18 +744,18 @@
                                     </path>
                                     <text transform="matrix(1 0 0 1 359.7324 210.1221)" fill="#FFFFFF">BA</text>
                                 </a>
-                                <a onclick="carrega('se');" xlink:href="#se" id="semp" class="linkestado">
+                                <a onclick="carrega('Sergipe');" xlink:href="#mapa-estado-selecionado" id="semp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M408.561,191.735
                                 c0.521-1.505,2.465-0.725,3.533-0.794c2.273-0.164,0.494-2.738,1.095-3.778c2.026-3.793-2.738-5.999-1.998-10.408
                                 c4.024,1.931,9.448,3.397,12.408,6.89c1.343,1.533,5.504,2.656,5.832,4.847c-6.822,0.384-6.901,8.819-11.942,11.572
                                 C413.545,202.212,407.055,193.721,408.561,191.735z"></path>
-                                    <path class="circle" d="M417.324,182.854c6.214,0,11.266,5.035,11.266,11.262c0,6.208-5.052,11.261-11.266,11.261
+                                    <!-- <path class="circle" d="M417.324,182.854c6.214,0,11.266,5.035,11.266,11.262c0,6.208-5.052,11.261-11.266,11.261
                                 c-6.238,0-11.258-5.053-11.258-11.261C406.063,187.89,411.084,182.854,417.324,182.854z">
-                                    </path>
+                                    </path> -->
                                     <text transform="matrix(1 0 0 1 408.9121 198.6689)" fill="#FFFFFF">SE</text>
                                 </a>
-                                <a onclick="carrega('pe');" xlink:href="#pe" id="pemp" class="linkestado">
+                                <a onclick="carrega('Pernambuco');" xlink:href="#mapa-estado-selecionado" id="pemp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M373.011,167.238
                                 c2.709-0.795,6.218-14.106,8.325-15.106c4.136-1.986,17.255-1.437,17.8,4.903c-0.437-0.068,8.189-2.273,7.479-1.466
@@ -1280,19 +767,19 @@
                                     </path>
                                     <text transform="matrix(1 0 0 1 401.3984 165.8003)" fill="#FFFFFF">PE</text>
                                 </a>
-                                <a onclick="carrega('al');" xlink:href="#al" id="almp" class="linkestado">
+                                <a onclick="carrega('Alagoas');" xlink:href="#mapa-estado-selecionado" id="almp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round"
                                         d="M413.953,169.018
                                 c3.78,3.313,9.424,5.505,12.547,5.491c3.229-0.013,5.009-3.328,7.421-4.794c1.177-0.712,10.297-1.93,9.174,1.042
                                 c-1.807,4.848-7.122,8.585-10.024,12.789c-2.792,2-3.423,7.093-6.354,1.864c-3.259,0.424-3.722-4.424-6.957-4.477
                                 c-3.668-2.261-7.998-3.769-11.201-6.342C410.615,172.646,412.751,171.359,413.953,169.018z"></path>
-                                    <path class="circle" d="M436.423,168.763c6.236,0,11.258,5.054,11.258,11.278c0,6.207-5.02,11.259-11.258,11.259
+                                    <!-- <path class="circle" d="M436.423,168.763c6.236,0,11.258,5.054,11.258,11.278c0,6.207-5.02,11.259-11.258,11.259
                                 c-6.241,0-11.263-5.052-11.263-11.259C425.16,173.816,430.182,168.763,436.423,168.763z">
-                                    </path>
+                                    </path> -->
                                     <text transform="matrix(1 0 0 1 429.7891 183.895)" fill="#FFFFFF">AL</text>
                                 </a>
-                                <a onclick="carrega('rn');" xlink:href="#rn" id="rnmp" class="linkestado">
+                                <a onclick="carrega('Rio Grande do Norte');" xlink:href="#mapa-estado-selecionado" id="rnmp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round"
                                         d="M404.698,138.795
@@ -1300,12 +787,12 @@
                                 c7.534,1.193,6.848,10.968,9.206,16.516c-1.919,1.096-13.972,0.521-15.064-1.657c-1.041-2.067-2.904,7.107-5.094,7.3
                                 c1.532-5.847-12.654,1.78-5.424-8.683c2.545-3.67-6.302-0.808-6.711,0.725C410.121,144.013,407.217,139.151,404.698,138.795z">
                                     </path>
-                                    <path class="circle" d="M430.827,107.798c6.241,0,11.261,5.039,11.261,11.261c0,6.224-5.02,11.261-11.261,11.261
+                                    <!-- <path class="circle" d="M430.827,107.798c6.241,0,11.261,5.039,11.261,11.261c0,6.224-5.02,11.261-11.261,11.261
                                 c-6.209,0-11.26-5.037-11.26-11.261C419.567,112.837,424.618,107.798,430.827,107.798z">
-                                    </path>
+                                    </path> -->
                                     <text transform="matrix(1 0 0 1 422.541 123.9009)" fill="#FFFFFF">RN</text>
                                 </a>
-                                <a onclick="carrega('ce');" xlink:href="#ce" id="cemp" class="linkestado">
+                                <a onclick="carrega('Ceará');" xlink:href="#mapa-estado-selecionado" id="cemp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M372.379,104.409
                                 c0.437-1.368,2.961-3.627,1.043-5.025c12.106-1.328,17.581-0.849,27.66,6.723c4.026,3.054,6.822,5.574,10.571,9.147
@@ -1316,7 +803,7 @@
                                 C373.035,102.314,374.815,105.971,372.379,104.409z"></path>
                                     <text transform="matrix(1 0 0 1 386.8379 129.0347)" fill="#FFFFFF">CE</text>
                                 </a>
-                                <a onclick="carrega('pi');" xlink:href="#pi" id="pimp" class="linkestado">
+                                <a onclick="carrega('Piauí');" xlink:href="#mapa-estado-selecionado" id="pimp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M320.781,185.478
                                 c2.465-5.149-7.505-20.801-7.505-20.801s47.354-65.868,54.285-66.841c0.299-0.042,6.243,1.768,6.463,2.219
@@ -1327,7 +814,7 @@
                                 C328.176,198.748,327.409,180.727,320.781,185.478z"></path>
                                     <text transform="matrix(1 0 0 1 355.127 158.1045)" fill="#FFFFFF">PI</text>
                                 </a>
-                                <a onclick="carrega('ma');" xlink:href="#ma" id="mamp" class="linkestado">
+                                <a onclick="carrega('Maranhão');" xlink:href="#mapa-estado-selecionado" id="mamp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M288.845,127.827
                                 c4.108-2.726,31.195-48.985,31.386-50.395c1.235,0.397,6.084,7.435,7.562,5.025c0.493,0.013-0.328,2.15-0.547,2.396
@@ -1343,7 +830,7 @@
                                 C290.983,125.675,290.983,128.044,288.845,127.827z"></path>
                                     <text transform="matrix(1 0 0 1 318.2754 126.7036)" fill="#FFFFFF">MA</text>
                                 </a>
-                                <a onclick="carrega('ap');" xlink:href="#ap" id="apmp" class="linkestado">
+                                <a onclick="carrega('Amapá');" xlink:href="#mapa-estado-selecionado" id="apmp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M225.198,39.089
                                 c3.274,1.165,3.985-1.315,6.572-1.74c3.616-0.603,5.683,2.725,9.037,2.067c4.055-0.78,7.093-8.025,7.314-11.598
@@ -1352,7 +839,7 @@
                                 C221.814,36.458,223.334,38.417,225.198,39.089z"></path>
                                     <text transform="matrix(1 0 0 1 245.9023 52.6099)" fill="#FFFFFF">AP</text>
                                 </a>
-                                <a onclick="carrega('pa');" xlink:href="#pa" id="pamp" class="linkestado">
+                                <a onclick="carrega('Pará');" xlink:href="#mapa-estado-selecionado" id="pamp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M173.378,50.619
                                 c2.259,2.63,5.629-4.478,7.901-3.82c3.19,0.918,1.478-1.108,5.026-1.752c1.931,0.806,3.096,0.273,3.519-1.631
@@ -1370,7 +857,7 @@
                                 C319.302,76.912,319.74,78.76,319.139,77.664z"></path>
                                     <text transform="matrix(1 0 0 1 232.7725 122.5137)" fill="#FFFFFF">PA</text>
                                 </a>
-                                <a onclick="carrega('rr');" xlink:href="#rr" id="rrmp" class="linkestado">
+                                <a onclick="carrega('Roraima');" xlink:href="#mapa-estado-selecionado" id="rrmp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M113.18,24.107
                                 c-0.972-2.753-7.861-5.889-6.999-8.984c0.068-0.232,13.229,6.053,12.79,2.808c0.398,1.329,1.219,1.889,2.439,1.685
@@ -1382,7 +869,7 @@
                                 s-12.517-52.736-20.335-54.063C115.261,36.417,111.523,25.682,113.18,24.107z"></path>
                                     <text transform="matrix(1 0 0 1 136.2939 42.3862)" fill="#FFFFFF">RR</text>
                                 </a>
-                                <a onclick="carrega('am');" xlink:href="#am" id="ammp" class="linkestado">
+                                <a onclick="carrega('Amazonas');" xlink:href="#mapa-estado-selecionado" id="ammp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round"
                                         d="M10.078,136.412
@@ -1405,7 +892,7 @@
                                     </path>
                                     <text transform="matrix(1 0 0 1 98.1406 119.0591)" fill="#FFFFFF">AM</text>
                                 </a>
-                                <a onclick="carrega('ac');" xlink:href="#ac" id="acmp" class="linkestado">
+                                <a onclick="carrega('Acre');" xlink:href="#mapa-estado-selecionado" id="acmp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round"
                                         d="M3.656,148.545
@@ -1416,7 +903,7 @@
                                 c6.299-3.41-3.107-11.9-5.216-15.679c-0.52-0.918-3.588-4.655-3.629-5.957C1.642,150.174,6.612,151.968,3.656,148.545z">
                                     </path>
                                     <text transform="matrix(1 0 0 1 47.7017 184.9355)" fill="#FFFFFF">AC</text>
-                                </a><a onclick="carrega('ro');" xlink:href="#ro" id="romp" class="linkestado">
+                                </a><a onclick="carrega('Rondônia');" xlink:href="#mapa-estado-selecionado" id="romp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M83.34,180.232
                                 c0.931-1.574,5.341-4.668,6.312-4.656c1.355-0.067,2.671,0.138,3.958,0.603c3.012,1.44,2.039-1.135,5.341-0.123
@@ -1430,7 +917,7 @@
                                     </path>
                                     <text transform="matrix(1 0 0 1 118.1299 195.3193)" fill="#FFFFFF">RO</text>
                                 </a>
-                                <a onclick="carrega('mt');" xlink:href="#mt" id="mtmp" class="linkestado">
+                                <a onclick="carrega('Mato Grosso');" xlink:href="#mapa-estado-selecionado" id="mtmp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M142.237,173.962
                                 c4-0.316-1.888-6.452,5-5.738c7.914,0.808,16.295,0.328,24.279,0.218c1.629-0.013,8.902,1.288,7.395-1.833
@@ -1446,7 +933,7 @@
                                 C143.581,176.618,141.937,174.714,142.237,173.962z"></path>
                                     <text transform="matrix(1 0 0 1 200.0244 218.4175)" fill="#FFFFFF">MT</text>
                                 </a>
-                                <a onclick="carrega('ms');" xlink:href="#ms" id="msmp" class="linkestado">
+                                <a onclick="carrega('Mato Grosso do Sul');" xlink:href="#mapa-estado-selecionado" id="msmp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round"
                                         d="M183.198,294.536
@@ -1461,7 +948,7 @@
                                     </path>
                                     <text transform="matrix(1 0 0 1 213.2939 306.7236)" fill="#FFFFFF">MS</text>
                                 </a>
-                                <a onclick="carrega('go');" xlink:href="#go" id="gomp" class="linkestado">
+                                <a onclick="carrega('Góias');" xlink:href="#mapa-estado-selecionado" id="gomp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round"
                                         d="M237.768,270.519
@@ -1480,7 +967,7 @@
                                     </path>
                                     <text transform="matrix(1 0 0 1 266.9111 254.2139)" fill="#FFFFFF">GO</text>
                                 </a>
-                                <a onclick="carrega('pr');" xlink:href="#pr" id="prmp" class="linkestado">
+                                <a onclick="carrega('Paraná');" xlink:href="#mapa-estado-selecionado" id="prmp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M222.225,363.694
                                 c1.807-2.138,1.889-4.881,2.424-7.479c0.301-1.453,0.465-7.86,1.369-8.736c2.3-0.684,2.3-3.315,2.726-5.204
@@ -1490,7 +977,7 @@
                                     </path>
                                     <text transform="matrix(1 0 0 1 248.4453 356.1045)" fill="#FFFFFF">PR</text>
                                 </a>
-                                <a onclick="carrega('sc');" xlink:href="#sc" id="scmp" class="linkestado">
+                                <a onclick="carrega('Santa Catarina');" xlink:href="#mapa-estado-selecionado" id="scmp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M231.029,383.959
                                 c1.669-3.338-0.284-10.516,4.573-10.569c6.631-0.109,13.639,3.559,20.402,3.888c1.317,0.055,5.231,2.163,4.357-1.15
@@ -1499,7 +986,7 @@
                                 C276.085,411.866,233.534,382.918,231.029,383.959z"></path>
                                     <text transform="matrix(1 0 0 1 266.9111 387.7646)" fill="#FFFFFF">SC</text>
                                 </a>
-                                <a onclick="carrega('rs');" xlink:href="#rs" id="rsmp" class="linkestado">
+                                <a onclick="carrega('Rio Grande do Sul');" xlink:href="#mapa-estado-selecionado" id="rsmp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round"
                                         d="M191.236,416.881
@@ -1513,7 +1000,7 @@
                                     </path>
                                     <text transform="matrix(1 0 0 1 231.0313 414.4658)" fill="#FFFFFF">RS</text>
                                 </a>
-                                <a onclick="carrega('sp');" xlink:href="#sp" id="spmp" class="linkestado">
+                                <a onclick="carrega('São Paulo');" xlink:href="#mapa-estado-selecionado" id="spmp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M239.3,330.554
                                 c3.26-4.356,9.56-5.039,11.531-10.792c1.369-3.942,3.889-8.818,6.135-13.036c1.561-2.957,7.749-7.121,10.517-8.65
@@ -1526,7 +1013,7 @@
                                 C247.982,330.386,239.876,331.21,239.3,330.554z"></path>
                                     <text transform="matrix(1 0 0 1 280.6816 327.3193)" fill="#FFFFFF">SP</text>
                                 </a>
-                                <a onclick="carrega('mg');" xlink:href="#mg" id="mgmp" class="linkestado">
+                                <a onclick="carrega('Minas Gerais');" xlink:href="#mapa-estado-selecionado" id="mgmp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M262.881,297.305
                                 c-1.696-5.094,15.531-19.882,18.844-13.421c5.531-7.367,15.886,1.588,19.773-3.944c0.988-1.367,3.015-1.453,3.725-2.957
@@ -1547,7 +1034,7 @@
                                     </path>
                                     <text transform="matrix(1 0 0 1 328.4063 286.4561)" fill="#FFFFFF">MG</text>
                                 </a>
-                                <a onclick="carrega('rj');" xlink:href="#rj" id="rjmp" class="linkestado">
+                                <a onclick="carrega('Rio de Janeiro');" xlink:href="#mapa-estado-selecionado" id="rjmp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M332.886,337.429
                                 c-1.26-2.768,8.409-4.795,7.89-6.71c-3.177-1.864-4.602,1.148-6.63-2.959c4.274-0.686,9.533-4.49,13.831-3.562
@@ -1557,12 +1044,12 @@
                                 c0,0,0.105,2.767-0.74,2.741c-0.766-0.056-7.643,1.094-7.449,0.463c1.398-0.359,2.708-0.684,4.135-0.794
                                 c-1.667-0.713-2.957-1.839-4.901-0.142c0.465,0.195-4.227-0.086-3.379-0.113c-0.521,1.727-3.814,0.699-3.879,3.045
                                 C336.717,337.908,333.927,342.41,332.886,337.429z"></path>
-                                    <path class="circle" d="M355.094,318.613c6.209,0,11.263,5.021,11.263,11.259c0,6.208-5.056,11.264-11.263,11.264
+                                    <!-- <path class="circle" d="M355.094,318.613c6.209,0,11.263,5.021,11.263,11.259c0,6.208-5.056,11.264-11.263,11.264
                                 c-6.211,0-11.263-5.054-11.263-11.264C343.831,323.634,348.883,318.613,355.094,318.613z">
-                                    </path>
+                                    </path> -->
                                     <text transform="matrix(1 0 0 1 347.4648 334.6807)" fill="#FFFFFF">RJ</text>
                                 </a>
-                                <a onclick="carrega('es');" xlink:href="#es" id="esmp" class="linkestado ativo">
+                                <a onclick="carrega('Espírito Santo');" xlink:href="#mapa-estado-selecionado" id="esmp" class="linkestado ativo">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M367.119,308.834
                                 c1.044-1.999-0.298-5.451,1.841-6.326c3.697-1.453,3.858-0.467,5.941-4.49c0.767-1.563,3.999-5.807,2.848-7.835
@@ -1571,22 +1058,22 @@
                                 c-0.218,0.576-5.861,8.954-5.831,8.954c0.985,3.289-5.18,5.808-6.054,8.165c-1.313,3.56-2.135,3.013-5.614,2.573
                                 c-1.64-0.274-3.202-0.768-4.736-1.451C368.819,311.297,369.424,309.055,367.119,308.834z">
                                     </path>
-                                    <path class="circle" d="M381.917,284.723c6.21,0,11.261,5.055,11.261,11.262c0,6.212-5.051,11.261-11.261,11.261
+                                    <!-- <path class="circle" d="M381.917,284.723c6.21,0,11.261,5.055,11.261,11.262c0,6.212-5.051,11.261-11.261,11.261
                                 c-6.212,0-11.263-5.049-11.263-11.261C370.654,289.777,375.705,284.723,381.917,284.723z">
-                                    </path>
+                                    </path> -->
                                     <text transform="matrix(1 0 0 1 373.3047 300.4971)" fill="#FFFFFF">ES</text>
                                 </a>
-                                <a onclick="carrega('df');" xlink:href="#df" id="dfmp" class="linkestado">
+                                <a onclick="carrega('Distrito Federal');" xlink:href="#mapa-estado-selecionado" id="dfmp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M292.461,246.197
                                 c0,0,12.929-2.903,14.188,0c1.233,2.903,0.659,10.683-1.424,11.504c-2.08,0.849-14.296-1.806-14.023-3.313
                                 C291.503,252.853,292.461,246.197,292.461,246.197z"></path>
-                                    <path class="circle" d="M300.735,238.34c6.212,0,11.26,5.035,11.26,11.258c0,6.21-5.048,11.263-11.26,11.263
+                                    <!-- <path class="circle" d="M300.735,238.34c6.212,0,11.26,5.035,11.26,11.258c0,6.21-5.048,11.263-11.26,11.263
                                 c-6.209,0-11.261-5.053-11.261-11.263C289.475,243.377,294.523,238.34,300.735,238.34z">
-                                    </path>
+                                    </path> -->
                                     <text transform="matrix(1 0 0 1 292.4141 254.2139)" fill="#FFFFFF">DF</text>
                                 </a>
-                                <a onclick="carrega('pb');" xlink:href="#pb" id="pbmp" class="linkestado">
+                                <a onclick="carrega('Paraíba');" xlink:href="#mapa-estado-selecionado" id="pbmp" class="linkestado">
                                     <path class="mapa-svg-estados" stroke="#FFFFFF" stroke-linecap="round"
                                         stroke-linejoin="round" d="M401.575,141.096
                                 c2.081-3.081,16.791-6.82,19.117-4.616c0,1.918,7.259,1.686,10.133,2.712c-0.492,3.038,12.652,1.533,14.408,2.259
@@ -1594,9 +1081,9 @@
                                 c-2.626,1.767-6.571,1.917-9.558,2.109c-0.162,1.232-3.943,4.438-5.259,4.916c-3.122,1.149-2.657-2.727-5.095-3.602
                                 c0.713-1.124,4.082-5.203,3.725-6.205c-1.423-3.846-12.051,5.52-14.981,3.506c-1.396-0.973-6.218,1.493-3.476-2.588
                                 C405.574,150.776,400.398,142.889,401.575,141.096z"></path>
-                                    <path class="circle" d="M433.797,133.597c6.237,0,11.26,5.051,11.26,11.261c0,6.226-5.022,11.262-11.26,11.262
+                                    <!-- <path class="circle" d="M433.797,133.597c6.237,0,11.26,5.051,11.26,11.261c0,6.226-5.022,11.262-11.26,11.262
                                 c-6.208,0-11.257-5.036-11.257-11.262C422.54,138.647,427.589,133.597,433.797,133.597z">
-                                    </path>
+                                    </path> -->
                                     <text transform="matrix(1 0 0 1 425.2129 148.9893)" fill="#FFFFFF">PB</text>
                                 </a>
                             </g>
@@ -1681,32 +1168,51 @@
     <script type="text/javascript">
         function carrega(qual) {
             mensagem = document.getElementById("mensagem");
-            //mensagem.innerHTML = "Federações em " + qual;
-            lojas1 = document.getElementsByClassName("federacao");
+            mensagem.innerHTML = "" + qual;
+            estado = document.getElementsByClassName("estado");
             var i;
-            for (i = 0; i < lojas1.length; i++) {
-                lojas1[i].style.display = "none";
+            for (i = 0; i < estado.length; i++) {
+                estado[i].style.display = "none";
             }
 
-            lojas = document.getElementsByClassName(qual);
+            estados = document.getElementsByClassName(qual);
             var i;
-            for (i = 0; i < lojas.length; i++) {
-                lojas[i].style.display = "table";
+            for (i = 0; i < estados.length; i++) {
+                estados[i].style.display = "table";
             }
         }
     </script>
 
     <script>
         $(function () {
-            $(".mapa-svg-estados").click(function () {
-                var mapa = $(this).attr("data");
+            $(".linkestado").click(function () {
+                //var mapa = $(this).attr("data");
 
-                $(".mapa-svg-estados").removeClass("active");
+                $(".linkestado").removeClass("active");
                 $(this).addClass("active");
 
                 //$(".box-mapa").css("display","none");
                 //$("#"+mapa).fadeIn(1000);
             });
+
+            $(".linkestado text").click(function () {
+                //alert('clicou');
+                //var mapa = $(this).attr("data");
+
+                
+                $(".linkestado").removeClass("active");
+                var estadoActiveText = $(this).parent().addClass("active");
+                //alert(estadoActiveText);  
+
+                //$(".mapa-svg-estados").addClass("active");
+            });
+
+            /*$(".linkestado text").hover(function () {
+                $(".linkestado").removeClass("active");
+                var estadoActiveText = $(this).parent().addClass("active");
+            });*/
+
+
         });
     </script>
 

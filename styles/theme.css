@@ -47,6 +47,21 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid #fab519;
 }
 
+.box-transporte-itens::-webkit-scrollbar {
+  width: 12px;
+}
+
+.box-transporte-itens::-webkit-scrollbar-track {
+  background: -webkit-gradient(linear, left top, right top, from(#446058), to(#507764));
+  background: linear-gradient(90deg, #446058, #507764);
+}
+
+.box-transporte-itens::-webkit-scrollbar-thumb {
+  background-color: #fab519;
+  border-radius: 20px;
+  border: 2px solid #fab519;
+}
+
 /*Owl*/
 .owl-theme {
   margin: 0 auto;
@@ -209,6 +224,12 @@ body::-webkit-scrollbar-thumb {
 :-moz-placeholder {
   /* Firefox 18- */
   color: orange;
+}
+
+.form-control:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.1rem #336b5d;
+          box-shadow: 0 0 0 0.1rem #336b5d;
 }
 
 /*Nav*/
@@ -715,6 +736,13 @@ li.nav-item .dropdown-item {
   margin: 4rem 0;
 }
 
+@media (max-width: 767px) {
+  #section-transportes .bg {
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+}
+
 #section-transportes .bg .sub-title {
   font-size: 48px;
   font-family: "Barlow", sans-serif;
@@ -725,27 +753,69 @@ li.nav-item .dropdown-item {
   margin-bottom: 0;
 }
 
+@media (max-width: 991px) {
+  #section-transportes .bg .sub-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  #section-transportes .bg .sub-title {
+    font-size: 23px;
+  }
+}
+
 #mapa-svg {
-  width: 1200px;
+  width: 1600px;
+}
+
+@media (max-width: 1399px) {
+  #mapa-svg {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1080px) {
+  #mapa-svg {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 991px) {
+  #mapa-svg {
+    width: 800px;
+  }
+}
+
+@media (max-width: 480px) {
+  #mapa-svg {
+    width: 600px;
+  }
+}
+
+@media (max-width: 365px) {
+  #mapa-svg {
+    width: 450px;
+  }
 }
 
 #mapa-svg text {
   font-size: 12px;
-  fill: #fab519;
+  fill: #000;
 }
 
 #mapa-svg .circle {
   fill: #507764;
 }
 
-.mapa-svg-estados {
+.linkestado .mapa-svg-estados {
   fill: #fff;
   stroke: #507764;
   -webkit-transition: .8s ease;
   transition: .8s ease;
 }
 
-.mapa-svg-estados:hover {
+.linkestado:hover .mapa-svg-estados {
   /*opacity: 0.6;*/
   cursor: pointer;
   stroke: #fff;
@@ -753,8 +823,121 @@ li.nav-item .dropdown-item {
   stroke-dashoffset: 0%;
 }
 
-.mapa-svg-estados.active {
+.linkestado .mapa-svg-estados.active,
+.linkestado.active .mapa-svg-estados {
   fill: #507764;
+}
+
+.estado.todos {
+  margin-top: 28vw;
+}
+
+@media (max-width: 991px) {
+  .estado.todos {
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .estado.todos {
+    margin-top: 0;
+    position: relative;
+    z-index: 9;
+  }
+}
+
+@media (max-width: 480px) {
+  .estado.todos {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 365px) {
+  .estado.todos {
+    margin-top: 0;
+  }
+}
+
+.link-sigla {
+  border: 2px solid #fab519;
+  color: #507764;
+  border-radius: 10px 0px 10px 0px;
+  padding: 0.3rem 0.8rem;
+  margin: .2rem;
+  float: left;
+  cursor: pointer;
+  width: 3rem;
+  text-align: center;
+}
+
+.link-sigla:hover {
+  background: #507764;
+  color: #fff;
+}
+
+#section-transportes .row-mapa {
+  height: 64vw;
+  padding-top: 5rem;
+}
+
+@media (max-width: 767px) {
+  #section-transportes .row-mapa {
+    height: auto;
+  }
+}
+
+.box-transporte-itens {
+  overflow: auto;
+  height: 61vw;
+}
+
+/*Section Contato*/
+#section-contato {
+  padding-top: 0rem;
+}
+
+#section-contato .sub-title {
+  font-size: 21px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  color: #507864;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+#section-contato .section-box {
+  margin-bottom: 4rem;
+}
+
+#section-contato .section-box .form-contato .form-control {
+  margin-bottom: 1rem;
+  padding: .8rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  border: 1px solid #507764;
+}
+
+#section-contato .section-box p a {
+  color: #507764;
+}
+
+#section-contato .section-box p a:hover {
+  text-decoration: underline;
+}
+
+#section-contato .section-box .form-contato input[type='submit'] {
+  border: 2px solid #000;
+  border-radius: 10px 0px 10px 0px;
+  padding: 0.3rem 0.8rem;
+  color: #507764;
+  font-weight: 800;
+  font-size: 21px;
+  margin-top: .5rem;
+  float: right;
+}
+
+#section-contato .section-box .form-contato input[type='submit']:hover {
+  background-color: #fab519;
 }
 
 /*Aside*/
@@ -943,6 +1126,32 @@ li.nav-item .dropdown-item {
 @media (max-width: 991px) {
   #footer .coluna {
     margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #section-transportes .row-mapa {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+  }
+  .box-transporte-itens {
+    margin-top: -22rem;
+    overflow: inherit;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .box-transporte-itens {
+    margin-top: -16rem;
+  }
+}
+
+@media (max-width: 365px) {
+  .box-transporte-itens {
+    margin-top: -12rem;
   }
 }
 /*# sourceMappingURL=theme.css.map */

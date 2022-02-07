@@ -4,7 +4,7 @@
     <!-- META TAGS GOOGLE -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nacional Transportes - Contato</title>    
+    <title>Nacional Transportes - Trabalhe Conosco</title>    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Front-end: Everton Paixão"/>
     <meta name="description" content=""/>
@@ -105,7 +105,7 @@
                 <img class="img-fluid" src="images/banner1.jpg" alt="">
                 <div class="container">
                     <div class="carousel-caption text-start">
-                      <h2 class="title">Faça sua solicitação através<br>do nosso formulário on-line<br>ou entre em contato conosco.</h2>
+                      <h2 class="title">Faça o seu cadastro através<br>do nosso formulário on-line<br>ou entre em contato conosco.</h2>
                     </div>
                 </div>
             </div>
@@ -120,65 +120,45 @@
         <!-- Section -->
         <section id="section-contato" class="section">
             <div class="container">
-                <h1 class="title">Contato</h1>
+                <h1 class="title">Trabalhe Conosco</h1>
 
                 <div class="row">
                     <div class="col-md-8">
                         <div class="section-box">
-                            <form action="" method="post" class="form-contato" autocomplete="false">
+                            <form action="" method="post" class="form-contato" autocomplete="false" enctype="multipart/form-data">
                                 <input class="form-control" type="text" name="nome" placeholder="Nome" required />
                                 <input class="form-control" type="email" name="email" placeholder="Email" required />
                                 <input class="form-control" type="text" name="telefone" id="tel" placeholder="Telefone" required />
-                                <textarea class="form-control" name="mensagem" placeholder="Mensagem" rows="6" required ></textarea>
+                                <div class="cidade-estado">
+                                    <select class="form-control" name="estadoorigem" id="estadoorigem" required></select>
+                                    <select class="form-control" name="cidadeorigem" id="cidadeorigem" required>
+                                        <option value="">Selecione primeiro o estado</option>
+                                    </select>
+                                </div>
+                                <select class="form-control" name="local" required>
+                                    <option value="">Preferência de local para trabalho</option>
+                                    <option value="Remoto">Remoto</option>
+                                    <option value="Presencial">Presencial</option>
+                                    <option value="Indiferente">Indiferente</option>
+                                </select>
+                                <input class="form-control" type="text" name="area" placeholder="Área em que deseja trabalhar" required />
+                                <input class="form-control" type="text" name="vaga" placeholder="Título da vaga" required />
+                                <select class="form-control" name="nivel" required>
+                                    <option value="">Nível do profissional</option>
+                                    <option value="Remoto">Júnior</option>
+                                    <option value="Presencial">Pleno</option>
+                                    <option value="Indiferente">Sênior</option>
+                                    <option value="Presencial">Coordenação</option>
+                                    <option value="Indiferente">Gerência</option>
+                                </select>
+                                <input class="form-control" type="text" name="linkedin" placeholder="Linkedin" required />
+                                <label>Anexe seu currículo(pdf)*</label>
+                                <br clear="all"/>
+                                <input type="file" id="upload" name="curriculo">
+                                <br clear="all"/>
                                 <input type="submit" name="enviarForm" value="Enviar" />
                             </form>
                         </div>
-
-                        <br clear="all"/><br clear="all"/><br clear="all"/>
-                        
-                        <section class="section-box">
-                            <h2 class="sub-title">FALE CONOSCO</h2>
-                            <p class="paragraph">
-                                <a href="tel:7132896100">+55 71 3289 6100</a>
-                                <br>
-                                <a href="tel:7146372040">+55 11 4637 2040</a>
-                                <br><br>
-                                <b>Horário de atendimento:</b> segunda à sexta das 8h30 às 19h</br>
-                            </p>
-                        </section>
-                        <section class="section-box">
-                            <h2 class="sub-title">MATRIZ</h2>
-                            <p class="paragraph">
-                                Rodovia BR-324, KM 11,5
-                                <br>
-                                Valéria, Salvador – BA
-                                <br>
-                                CEP 41300-500
-                                <br>
-                                <b>Tel.</b> <a href="tel:7132896100">+55 71 3289 6100</a>
-                            </p>
-                        </section>
-                        <section class="section-box">
-                            <h2 class="sub-title">FILIAIS</h2>
-                            <p class="paragraph">
-                                R. Luigi Batistini, 639
-                                <br>
-                                Batistini, São Bernardo do Campo - SP
-                                <br>
-                                CEP 09842-020
-                                <br><br>
-                                Rua Alcíno Manoel da Silva, 680
-                                <br>
-                                Praia Comprida, São José - SC
-                                <br>
-                                CEP 88103-700
-                            </p>
-                        </section>
-                        <section class="section-box">
-                            <p class="paragraph">
-                                <strong>E-mail:</strong> <a href="mailto:contato@nacionaltransportes.com">contato@nacionaltransportes.com</a>
-                            </p>
-                        </section>
                     </div>
                     <aside id="aside" class="col-md-4">
                         <a class="link" href="cotacao.html">
@@ -275,6 +255,8 @@
     <script src="library/scripts.js"></script>
 
     <script src="scripts/mascara-telefone.js"></script>
+    <script src="scripts/cidades-estados.js"></script>
+    <script src="scripts/cidades-estados-variaveis.js"></script>
 
 </body>
 </html>

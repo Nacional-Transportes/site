@@ -464,7 +464,8 @@ li.nav-item .dropdown-item {
 
 #section-blog .paragraph {
     color: #bee1b9;
-    font-size: 26px;
+    font-size: 23px;
+    line-height: 23px;
     font-weight: 100;
     font-style: italic;
 }
@@ -834,6 +835,51 @@ li.nav-item .dropdown-item {
         background-color: $second-color;
     }
 }
+
+#section-contato .cidade-estado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#section-contato .cidade-estado select {
+    width: 49%;
+}
+
+#section-contato select.form-control {
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+    appearance: auto;
+    color: #6c7991;
+}
+
+/*Serviços-Trasnportes*/
+#section-servicos.transportes .section-box {
+    display: block
+}
+
+.table-transporte-moto {
+    width: 100%;
+    font-family: $site-font;
+    @media (max-width: 370px) {
+        font-size: 12px;
+    }
+}
+
+.table-transporte-moto tr:first-child {
+    background: $primary-color;
+    color: #c7dfb8;
+}
+
+.table-transporte-moto tr {
+    border-bottom: 1px solid $primary-color;
+}
+
+.table-transporte-moto tr th,
+.table-transporte-moto tr td {
+    padding: 10px;
+}
+
 
 /*Aside*/
 #aside {

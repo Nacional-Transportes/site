@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- META TAGS GOOGLE -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nacional Transportes - Cadastro de Fornecedor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Front-end: Everton Paixão" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- META TAGS FACEBOOK -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+
+    <!-- URL SITE -->
+    <base href="" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.1.3 -->
+    <link rel="stylesheet" href="library/bootstrap-5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="library/bootstrap-5.1.3/font/bootstrap-icons.css">
+
+    <!-- OWL CAROUSEL 2 -->
+    <link rel="stylesheet" href="library/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="library/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- Theme Site CSS -->
+    <link rel="stylesheet" href="styles/form-cotacao.css">
+    <link rel="stylesheet" href="styles/theme.css">
+
+</head>
+
+<body>
+
+    <h1 style="display: none;">Nacional Transportes</h1>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+
+        <!-- Nav -->
+        <nav class="navbar navbar-dark bg-header">
+            <div class="container">
+                <a class="navbar-brand" href="./"><img class="img-fluid" src="images/logo-nacional-transportes.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-right">
+                    <a class="link" href="cotacao.html">Cotação Online</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarsExample01">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item"><a class="nav-link" href="empresa.html">Empresa</a></li>
+                        <!--li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="servicos.html" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                              <li><a class="dropdown-item" href="transporte-de-veiculos.html">Transporte de Veículos</a></li>
+                              <li><a class="dropdown-item" href="transportes-de-motos.html">Transporte de Motos</a></li>
+                              <li><a class="dropdown-item" href="transportes-porta-a-porta.html">Transporte Porta-a-Porta</a></li>
+                              <li><a class="dropdown-item" href="transportes-com-slider.html">Transporte com Sider</a></li>
+                              <li><a class="dropdown-item" href="transportes-aereo-de-veiculos.html">Transporte Aéreo de Veículos</a></li>
+                            </ul>
+                        </li-->
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="transportes.html">Transportes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="duvidas-frequentes.html">Dúvidas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="qualidade.html">Qualidade</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--/ Nav -->
+
+    </header>
+    <!--/ Header -->
+
+    <!-- Banner -->
+    <div id="home" class="scroll">
+        <div class="owl-carousel owl-banner owl-theme">
+            <div class="item">
+                <img class="img-fluid" src="images/banner1.jpg" alt="">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h2 class="title">Faça o seu cadastro através<br>do nosso formulário on-line<br>ou entre em
+                            contato conosco.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="img-fluid bg-ondulacao-banner-pages" src="images/bg-ondulacao-banner-pages.png" alt="">
+    </div>
+    <!--/ Banner -->
+
+    <!-- Main -->
+    <main id="main">
+
+        <!-- Section -->
+        <section id="section-contato" class="section">
+            <div class="container">
+                <h1 class="title">Cadastro de Fornecedor</h1>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#motorista"
+                            type="button" role="tab" aria-controls="motorista" aria-selected="true">Motorista</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="base-tab" data-bs-toggle="tab" data-bs-target="#base" type="button"
+                            role="tab" aria-controls="base" aria-selected="false">Base</button>
+                    </li>
+                </ul>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="section-box">
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="motorista" role="tabpanel"
+                                    aria-labelledby="motorista-tab">
+
+                                    <!-- Form Motorista -->
+                                    <form action="" method="post" class="form-contato" autocomplete="false"
+                                        enctype="multipart/form-data">
+                                        <input class="form-control" type="text" name="nome" placeholder="Nome"
+                                            required />
+                                        <input class="form-control" type="email" name="email" placeholder="Email"
+                                            required />
+                                        <input class="form-control" type="text" name="telefone" id="tel"
+                                            placeholder="Telefone" required />
+                                        <select class="form-control" name="cnh" required>
+                                            <option value="">Selecione o tipo de CNH</option>
+                                            <option value="A">A</option>
+                                            <option value="AB">AB</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                            <option value="D">D</option>
+                                            <option value="E">E</option>
+                                        </select>
+                                        <input class="form-control" type="text" name="numero"
+                                            placeholder="Número da CNH" required />
+                                        <select class="form-control" name="veiculo" required>
+                                            <option value="">Possui veículo próprio para o transporte?</option>
+                                            <option value="Sim">Sim</option>
+                                            <option value="Não">Não</option>
+                                        </select>
+                                        <select class="form-control" name="tipo" required>
+                                            <option value="">Tipo de veículo</option>
+                                            <option value="Caminhão">Caminhão</option>
+                                            <option value="Guincho">Guincho</option>
+                                        </select>
+                                        <label>Trecho disponível para rotas:</label>
+                                        <br clear="all" />
+                                        <div class="box-checkbox">
+                                            <input id="sul" type="checkbox" name="rotas" value="Sul">
+                                            <label for="sul">Sul</label>
+                                        </div>
+                                        <div class="box-checkbox">
+                                            <input id="sudeste" type="checkbox" name="rotas" value="Sudeste">
+                                            <label for="sudeste">Sudeste</label>
+                                        </div>
+                                        <div class="box-checkbox">
+                                            <input id="Nordeste" type="checkbox" name="rotas" value="Nordeste">
+                                            <label for="Nordeste">Nordeste</label>
+                                        </div>
+                                        <div class="box-checkbox">
+                                            <input id="Norte" type="checkbox" name="rotas" value="Norte">
+                                            <label for="Norte">Norte</label>
+                                        </div>                                        
+                                        <br clear="all" />
+                                        <label>Dados do veículo:</label>
+                                        <br clear="all" />
+                                        <input class="form-control" type="text" name="tipo" placeholder="Tipo"
+                                            required />
+                                        <input class="form-control" type="text" name="ano" placeholder="Ano" required />
+                                        <input class="form-control" type="text" name="valor" placeholder="valor"
+                                            id="veiculovalor" onkeyup="formatarMoeda();" required />
+                                        <br clear="all" />
+                                        <input type="submit" name="enviarForm" value="Enviar" />
+                                    </form>
+                                    <!--/ Form Motorista -->
+                                </div>
+
+                                <div class="tab-pane fade" id="base" role="tabpanel" aria-labelledby="base-tab">
+
+                                    <!-- Form Base -->
+                                    <form action="" method="post" class="form-contato" autocomplete="false"
+                                        enctype="multipart/form-data">
+                                        <input class="form-control" type="text" name="nome" placeholder="Nome do responsável pela base"
+                                            required />
+                                        <input class="form-control" type="email" name="email" placeholder="Email"
+                                            required />
+                                        <input class="form-control" type="text" name="telefone" id="tel2"
+                                            placeholder="Telefone" required />
+                                            <input class="form-control" type="text" name="nomedabase"
+                                            placeholder="Nome da base" required />
+                                            <input class="form-control" type="text" name="enderecodabase"
+                                            placeholder="Endereço da base" required />
+                                        <select class="form-control" name="cnh" required>
+                                            <option value="">Possui pátio?</option>
+                                            <option value="Sim">Sim</option>
+                                            <option value="Não">Não</option>
+                                        </select>
+                                        <input class="form-control" type="text" name="tamanhodopatio"
+                                            placeholder="Tamanho do pátio" required />
+                                            <input class="form-control" type="text" name="capacidadevagas"
+                                            placeholder="Capacidade de vagas" required />
+                                        <label>Recursos da base:</label>
+                                        <br clear="all" />
+                                        <div class="box-checkbox">
+                                            <input id="Banheiro" type="checkbox" name="rotas" value="Banheiro">
+                                            <label for="Banheiro">Banheiro</label>
+                                        </div>
+                                        <div class="box-checkbox">
+                                            <input id="Refeitório" type="checkbox" name="rotas" value="Refeitório">
+                                            <label for="Refeitório">Refeitório</label>
+                                        </div>
+                                        <div class="box-checkbox">
+                                            <input id="Restaurante" type="checkbox" name="rotas" value="Restaurante">
+                                            <label for="Restaurante">Restaurante</label>
+                                        </div>
+                                        <div class="box-checkbox">
+                                            <input id="Escritório" type="checkbox" name="rotas" value="Escritório">
+                                            <label for="Escritório">Escritório</label>
+                                        </div>
+                                        <div class="box-checkbox">
+                                            <input id="sala" type="checkbox" name="rotas" value="Sala de Espera">
+                                            <label for="sala">Sala de Espera</label>
+                                        </div>
+                                        <div class="box-checkbox">
+                                            <input id="Nenhum" type="checkbox" name="rotas" value="Nenhum">
+                                            <label for="Nenhum">Nenhum</label>
+                                        </div>
+                                        <div class="box-checkbox">
+                                            <input id="Outros" type="checkbox" name="rotas" value="Outros">
+                                            <label for="Outros">Outros</label>
+                                        </div>
+                                        <div class="box-checkbox">
+                                            <input id="sala" type="checkbox" name="rotas" value="Centro-oeste">
+                                            <label for="sala">Centro-oeste</label>
+                                        </div>
+                                        <br clear="all" />
+                                        <input class="form-control" type="time" name="tipo" placeholder="Horário de funcionamento da base"
+                                            required />                                        
+                                        <br clear="all" />
+                                        <input type="submit" name="enviarForm" value="Enviar" />
+                                    </form>
+                                    <!--/ Form Base -->
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <aside id="aside" class="col-md-4">
+                        <a class="link" href="cotacao.html">
+                            Cotação Online
+                        </a>
+                        <div class="box bg">
+                            <h2 class="sub-title">Principais estados</h2>
+                            <p class="paragraph">
+                                Bahia<br>
+                                Minas Gerais<br>
+                                Rio Grande do Sul<br>
+                                São Paulo
+                            </p>
+                        </div>
+                        <div class="box bg">
+                            <h2 class="sub-title">Principais cidades</h2>
+                            <p class="paragraph">
+                                Brasília (GO)<br>
+                                Belo Horizonte (MG)<br>
+                                São Paulo (SP)<br>
+                                Fortaleza (CE)
+                            </p>
+                        </div>
+                        <div class="box">
+
+                        </div>
+                    </aside>
+
+                </div>
+
+            </div>
+        </section>
+        <!--/ Section -->
+
+    </main>
+    <!--/ Main -->
+
+    <!-- Footer -->
+    <footer id="footer" class="bg">
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="coluna col-lg-3 col-md-6">
+                        <h1 class="title">A Empresa</h1>
+                        <a href="" class="link">Cadastro de Fornecedor</a>
+                        <a href="" class="link">Trabalhe Conosco</a>
+                        <a href="" class="link">Política de Privacidade e Segurança</a>
+                        <a href="" class="link">Termos de Uso</a>
+                    </div>
+                    <div class="coluna col-lg-3 col-md-6">
+                        <h1 class="title">Links Rápidos</h1>
+                        <a href="" class="link">Transporte de Veículos</a>
+                        <a href="" class="link">Transporte de Moto</a>
+                        <a href="" class="link">Transporte Aéreo de Veículos</a>
+                        <a href="" class="link">Transporte Porta a Porta</a>
+                    </div>
+                    <div class="coluna col-lg-3 col-md-6">
+                        <h1 class="title">Últimas do Blog</h1>
+                        <a href="" class="link">Vantagens de transportar seu veículo no caminhão Sider</a>
+                        <a href="" class="link">Cuidados para transportar sua moto</a>
+                        <a href="" class="link">Quais são os riscos de avarias em veículos no transporte com
+                            cegonha?</a>
+                    </div>
+                    <div class="coluna col-lg-3 col-md-6">
+                        <h1 class="title">Fale Conosco</h1>
+                        <p class="paragraph">Rodovia BR-324, KM 11,5, Valéria, Salvador-Ba, CEP: 41300-500 <br><a
+                                href="tel://7132896100"><i>+55 (71) 3289-6100</i></a></p>
+                        <p class="paragraph">Av. Engenheiro Luís Carlos Berrini, 1748 (9º andar), Itaim Bibi, São
+                            Paulo-SP, CEP: 04571-000<br><a href="tel://1146372040"><i>+55 (11) 4637-2040</i></a></p>
+                        <div class="box-redes">
+                            <p class="paragraph"><a href="https://api.whatsapp.com/send?phone=551146372040"
+                                    target="_blank"><i class="bi bi-whatsapp"></i></a></p>
+                            <p class="paragraph"><a href="https://www.facebook.com/nacionaltransportedeveiculos"
+                                    target="_blank"><i class="bi bi-facebook"></i></a></p>
+                            <p class="paragraph"><a href="https://www.instagram.com/nacional.transportes/"
+                                    target="_blank"><i class="bi bi-instagram"></i></a></p>
+                            <p class="paragraph"><a href="https://br.linkedin.com/company/nacional-transportes"
+                                    target="_blank"><i class="bi bi-linkedin"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <i class="text-copyright">2022. Nacional Transportes, CNPJ: 12.098.304/0001-12 - Todos os
+                            direitos reservados</i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--/ Footer -->
+
+    <!-- Jquery -->
+    <script src="library/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <script src="library/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- OWL CAROUSEL 2 -->
+    <script src="library/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- SCRIPTS -->
+    <script src="library/scripts.js"></script>
+
+    <script src="scripts/mascara-telefone.js"></script>
+    <script src="scripts/cidades-estados.js"></script>
+    <script src="scripts/cidades-estados-variaveis.js"></script>
+    <script src="scripts/mascara-moeda.js"></script>
+
+</body>
+
+</html>

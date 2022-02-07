@@ -853,7 +853,7 @@ li.nav-item .dropdown-item {
     color: #6c7991;
 }
 
-/*Serviços-Trasnportes*/
+/*Serviços-Transportes*/
 #section-servicos.transportes .section-box {
     display: block
 }
@@ -880,6 +880,16 @@ li.nav-item .dropdown-item {
     padding: 10px;
 }
 
+//Nav-Tab
+.nav-tabs {
+    border-bottom: none;
+    margin-bottom: 1rem;
+}
+
+.nav-tabs .nav-link {
+    color: $primary-color;
+    font-size: 18px;
+}
 
 /*Aside*/
 #aside {

@@ -35,4 +35,9 @@ window.onload = function () {
     mascara(this, mtel);
     tamanhoCaracterTelefone(this);
   };
+  id("tel2").onkeypress = function () {
+    mascara(this, mtel);
+    tamanhoCaracterTelefone(this);
+  };
 };
+

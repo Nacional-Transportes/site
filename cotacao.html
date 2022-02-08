@@ -99,6 +99,8 @@
                 //alert(etapas);
   
                 mudarCorPassos = 1;
+
+                document.getElementById("buttonEnviarForm").textContent="Próximo";
   
             }
             
@@ -112,6 +114,8 @@
                 //alert(etapas);
   
                 mudarCorPassos = 2;
+
+                document.getElementById("buttonEnviarForm").textContent="Próximo";
   
             }
   
@@ -125,6 +129,8 @@
                 //alert(etapas);
   
                 mudarCorPassos = 3;
+
+                document.getElementById("buttonEnviarForm").textContent="Enviar";
             }
   
             if (mudarCorPassos == 1) {
@@ -659,10 +665,10 @@
                                 </div>
                                 
                                 <button
-                                type="button"
+                                type="button" id="buttonEnviarForm"
                                 onclick="enviarForm(); exibirPopUp('alertaPopUp');"
                               >
-                                Enviar
+                                Próximo
                               </button>
                           
                                 <div id="mensagem" class="EstiloMensagemDeErro"></div>

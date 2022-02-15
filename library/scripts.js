@@ -104,8 +104,9 @@ function navbarHide() {
 function navbarClickActiveScroll() {
     jQuery(function ($) {
         count=0;
+        $scrollTop = 0;
         
-        $('.navbar-toggler').on('click', function () {
+       /*  $('.navbar-toggler').on('click', function () {
             if (count==0) {
                 $('.bg-header').addClass('active');
                 count = count + 1;
@@ -113,13 +114,44 @@ function navbarClickActiveScroll() {
                 setTimeout(function(){  $('.bg-header').removeClass('active'); }, 300);
                 count = count - 1;
             }
+        }); */
+
+        
+        $('.navbar-toggler').on('click', function () {
+            //alert('count:' + count);
+
+            $scrollTop = $(this).scrollTop();
+            if (count == 0) {
+                $('.bg-header').addClass('active');
+                //alert('entrou add');
+                count++;
+            } 
+            else if (count == 1) {
+                $('.bg-header').removeClass('active');
+                //alert('remove add');
+                count--;
+            }
+            else if (count == 2) {
+                $('.bg-header').addClass('active');
+                //alert('remove add');
+                //count--;
+            }
+                
         });
+
 
         jQuery(window).scroll(function () {
             $scrollTop = $(this).scrollTop();
-            if ($scrollTop >= 50) {
+            if ($scrollTop >= 10) {
                 $('.bg-header').addClass('active');
+                count = 2;
+                //alert(count)
             } else {
+
+                count = 0;
+                //alert(count)
+                $('.navbar-collapse').removeClass('show');
+
                 if (count==1) {
                     $('.bg-header').addClass('active');
                 } else {

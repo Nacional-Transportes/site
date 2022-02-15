@@ -65,6 +65,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: inherit;
+}
+
 p {
     color: $color-paragraph;
     font-size: $size-paragraph;
@@ -266,12 +270,29 @@ animation-delay: 0.8s;
 
 .navbar-dark .navbar-brand,
 .navbar-right {
-    width: 20%;
-    max-width: 250px;
+    width: 30%;
+    max-width: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @media (max-width: 1199px) {
+        width: 40%;
+    }
+    @media (max-width: 991px) {
+        width: 25%;
+    }
     @media (max-width: 767px) {
         width: 35%;
     }
 }
+
+.navbar-dark .navbar-brand {
+    max-width: 300px;
+
+    img {
+        max-width: 250px;
+    }
+}
+
+
 
 .navbar-right {
     text-align: right;
@@ -280,10 +301,12 @@ animation-delay: 0.8s;
     }
 }
 
-.navbar-right a.link {
-    border: 1px solid $second-color;
-    border-radius: 10px 0px 10px 0px;
-    padding: .3rem .8rem;
+.navbar-right a.link-tel {
+    font-size: 16px;
+    margin-left: 8px;
+    padding: 3px 6px;
+    font-weight: bold;
+    border-radius: 5px;
 
     &:hover {
         background: $primary-color;
@@ -291,6 +314,32 @@ animation-delay: 0.8s;
     }
     @media (max-width: 567px) {
         font-size: 12px;
+        width: 100%;
+        display: block;
+        float: right;
+    }
+}
+
+.navbar-right a.link {
+    border: 1px solid $second-color;
+    border-radius: 10px 0px 10px 0px;
+    padding: .3rem .8rem;
+    background: rgb(80 119 100 / 50%);
+
+    &:hover {
+        background: $primary-color;
+        color: $second-color;
+    }
+    @media (max-width: 991px) {
+        margin-top: 0.3rem;
+        display: block;
+        width: 147px;
+        float: right;
+        margin-bottom: .5rem;
+    }
+    @media (max-width: 567px) {
+        font-size: 12px;
+        width: 117px;
     }
 }
 
@@ -330,6 +379,14 @@ li.nav-item .dropdown-item {
 
 .owl-carousel.owl-banner .container {
     position: relative;
+}
+
+.owl-carousel.owl-banner .item {
+    background-color: black;
+}
+
+.owl-carousel.owl-banner .item img {
+    opacity: .5;
 }
 
 .carousel-caption {

@@ -379,7 +379,7 @@ li.nav-item .dropdown-item {
 }
 
 .owl-carousel.owl-banner .item img {
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .carousel-caption {
@@ -474,7 +474,7 @@ li.nav-item .dropdown-item {
 }
 
 #section-serviços .img-transporte-veiculos {
-  margin-left: -142px;
+  margin-left: 0;
 }
 
 /*Section Atuação*/

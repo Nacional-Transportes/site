@@ -247,7 +247,6 @@ animation-delay: 0.8s;
 
 .navbar-nav .nav-link {
     font-size: 21px;
-    padding-left: 13px;
 }
 
 .navbar-toggler:focus {
@@ -267,12 +266,16 @@ animation-delay: 0.8s;
 .navbar-toggler-icon {
     width: 2.5em;
     height: 1.5em;
+    @media (max-width: 360px) {
+        width: 1.5em;
+    }
 }
 
 .navbar-dark .navbar-brand,
 .navbar-right {
-    width: 30%;
+    width: 195px;
     max-width: 300px;
+    margin: 0;
     @media (max-width: 1199px) {
         width: 40%;
     }
@@ -284,18 +287,9 @@ animation-delay: 0.8s;
     }
 }
 
-.navbar-dark .navbar-brand {
-    max-width: 300px;
-
-    img {
-        max-width: 250px;
-    }
-}
-
-
-
 .navbar-right {
-    text-align: right;
+    text-align: right;    
+    margin-top: 6px;
     @media (max-width: 342px) {
         display: none;
     }
@@ -315,7 +309,7 @@ animation-delay: 0.8s;
     }
     @media (max-width: 567px) {
         font-size: 14px;
-        width: 100%;
+        width: 117px;
         display: block;
         float: right;
     }
@@ -718,6 +712,11 @@ li.nav-item .dropdown-item {
     }
 }
 
+/*Section Dúvidas*/
+#section-duvidas {     
+    padding-top: 0;
+}
+
 //Acordion
 #accordion .accordion-item {
     border: 0px solid;
@@ -731,6 +730,7 @@ li.nav-item .dropdown-item {
     background-color: #fff;
     border-bottom: 2px solid $primary-color;
     font-weight: 600;
+    padding-left: 0;
 }
 
 #accordion .accordion-item .accordion-header .accordion-button:focus {
@@ -987,6 +987,7 @@ li.nav-item .dropdown-item {
     align-items: flex-end;
     @media (max-width: 767px) {
         align-items: center;
+        margin-top: 5rem;
     }
 }
 

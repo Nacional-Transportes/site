@@ -12,6 +12,8 @@ $(document).ready(function() {
 
     navbarClickActiveScroll();
 
+    pageMenuActive();
+
 });
 
 /*Preload fade*/
@@ -160,5 +162,13 @@ function navbarClickActiveScroll() {
             }
         });
             
+    });
+}
+
+/* NAVBAR - MENU ACTIVE */
+function pageMenuActive() {
+    $(function(){
+        var page = $("body").attr("class");
+        $(".navbar li[data='"+page+"']").addClass("active");
     });
 }

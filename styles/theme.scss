@@ -14,11 +14,11 @@ body {
 $site-bg: #fff;
 $site-font: 'Barlow', sans-serif;
 
-$primary-color: #507764;
-$primary-bg: linear-gradient(90deg, #446058, #507764);
+$primary-color: #507864;
+$primary-bg: linear-gradient(90deg, #446058, #507864);
 
-$second-color: #fab519;
-$second-bg: #fab519;
+$second-color: #ffbf1e;
+$second-bg: #ffbf1e;
 
 $font-paragraph: 'Barlow', sans-serif;
 $size-paragraph: 18px;
@@ -39,14 +39,14 @@ $color-link: #fff;
 
 $color-active: #fff;
 
-$color-placeholder: orange;
+$color-placeholder: #ffbf1e;
 
-$scroll-color-bg: linear-gradient(90deg, #446058, #507764);;
-$scroll-color-bg-thumb: #fab519;
-$scroll-color-border: #fab519;
+$scroll-color-bg: linear-gradient(90deg, #283C32, #507864);;
+$scroll-color-bg-thumb: #ffbf1e;
+$scroll-color-border: #ffbf1e;
 
 $preloader-color-bg: white;
-$preloader-color-bg-loading: #fab519;
+$preloader-color-bg-loading: #ffbf1e;
 
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 13h22M4 19h22'/%3e%3c/svg%3e") !important;
 
@@ -63,6 +63,7 @@ body {
 a {
     color: $color-link;
     text-decoration: none;
+    font-family: $site-font;
 }
 
 a:hover {
@@ -272,7 +273,6 @@ animation-delay: 0.8s;
 .navbar-right {
     width: 30%;
     max-width: 300px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     @media (max-width: 1199px) {
         width: 40%;
     }
@@ -302,18 +302,19 @@ animation-delay: 0.8s;
 }
 
 .navbar-right a.link-tel {
-    font-size: 16px;
-    margin-left: 8px;
+    font-size: 20px;
+    margin-left: 2px;
     padding: 3px 6px;
     font-weight: bold;
     border-radius: 5px;
+    text-align: center;
 
     &:hover {
         background: $primary-color;
         color: $second-color;
     }
     @media (max-width: 567px) {
-        font-size: 12px;
+        font-size: 14px;
         width: 100%;
         display: block;
         float: right;
@@ -323,8 +324,10 @@ animation-delay: 0.8s;
 .navbar-right a.link {
     border: 1px solid $second-color;
     border-radius: 10px 0px 10px 0px;
-    padding: .3rem .8rem;
-    background: rgb(80 119 100 / 50%);
+    padding: .3rem .8rem;    
+    background: #50786480;
+    font-size: 19px;
+    text-align: center;
 
     &:hover {
         background: $primary-color;
@@ -335,16 +338,21 @@ animation-delay: 0.8s;
         display: block;
         width: 147px;
         float: right;
-        margin-bottom: .5rem;
+        margin-bottom: .2rem;
+        font-size: 18px;
     }
     @media (max-width: 567px) {
-        font-size: 12px;
+        font-size: 13px;
         width: 117px;
     }
 }
 
 li.nav-item {
     text-align: center;
+}
+
+li.nav-item.active .nav-link {
+    color: $second-color;
 }
 
 li.nav-item .dropdown-item {
@@ -434,7 +442,7 @@ li.nav-item .dropdown-item {
     font-family: $font-subtitle;
     font-weight: $weight-subtitle;
     color: $color-subtitle;
-    margin-bottom: 2rem;
+    text-transform: uppercase;
 }
 
 .section .link.saiba-mais {
@@ -472,10 +480,16 @@ li.nav-item .dropdown-item {
     margin-bottom: 6rem;
 }
 
+#section-serviços .title,
+#section-serviços .sub-title {
+    margin-bottom: 1rem;
+}
+
 #section-serviços .sub-title.destaque {
     text-align: center;
     font-size: 48px;
     font-weight: 100;
+    text-transform: inherit;
 }
 
 #section-serviços .img-transporte-veiculos {
@@ -529,6 +543,11 @@ li.nav-item .dropdown-item {
 
 #section-blog .row {
     margin-bottom: 3rem;
+}
+
+#section-blog img {
+    border-radius: 8px;
+    margin-bottom: .5rem;
 }
 
 /*Section Depoimentos*/
@@ -658,7 +677,7 @@ li.nav-item .dropdown-item {
     color: #c8c8d7;
 }
 
-#section-page-blog .sub-title {
+#section-page-blog .sub-title-page {
     font-size: 26px;
     font-family: $font-subtitle;
     font-weight: 400;
@@ -668,8 +687,21 @@ li.nav-item .dropdown-item {
     font-style: italic;
 }
 
+#section-page-blog .sub-title {
+    font-size: 21px;
+    font-family: $font-subtitle;
+    font-weight: 800;
+    color: $color-subtitle;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
 #section-page-blog .section-box {
     margin-bottom: 4rem;
+}
+
+#section-page-blog .section-box img {
+    width: 100%;
 }
 
 #section-page-blog .section-box .link {
@@ -960,7 +992,7 @@ li.nav-item .dropdown-item {
 
 #aside .box {
     margin-top: 3rem;
-    padding: 1rem 5rem;
+    padding: 1rem 3rem;
     padding-top: 2.1rem;
 }
 
@@ -1200,6 +1232,7 @@ li.nav-item .dropdown-item {
     margin-top: 2rem;
     font-size: 18px;
     font-weight: bold;
+    font-family: $site-font;
     @media (max-width: 991px) {
         margin-top: 0;
     }

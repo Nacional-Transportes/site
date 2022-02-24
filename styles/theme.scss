@@ -105,12 +105,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*Owl*/
+
+.owl-stage {
+    display: flex;
+    align-items: center;
+}
+
 .owl-theme {
 
     margin: 0 auto;
 
     .owl-nav {
-        margin-top: 10px;
+        margin-top: -13px;
         position: absolute;
         top: 0;
         width: 100%;

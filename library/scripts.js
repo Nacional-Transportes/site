@@ -29,7 +29,7 @@ function navBarFixed() {
 /* OWL CAROUSEL 2 */
 function owlCarrossel() {
     $('.owl-carousel.owl-banner').owlCarousel({
-        autoplay:false,
+        autoplay:true,
         loop: true,
         margin: 0,
         items: 1,

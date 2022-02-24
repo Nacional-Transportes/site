@@ -411,6 +411,7 @@ li.nav-item .dropdown-item {
     align-items: center;
     height: 55vw;
     text-align: left;
+    max-width: 800px;
     @media (max-width: 567px) {
         height: 46vw;
     }
@@ -539,6 +540,9 @@ li.nav-item .dropdown-item {
     line-height: 23px;
     font-weight: 100;
     font-style: italic;
+    @media (max-width: 767px) {
+        margin-bottom: 3rem;
+    }
 }
 
 #section-blog .row {
@@ -548,6 +552,7 @@ li.nav-item .dropdown-item {
 #section-blog img {
     border-radius: 8px;
     margin-bottom: .5rem;
+    width: 100%;
 }
 
 /*Section Depoimentos*/
@@ -698,6 +703,12 @@ li.nav-item .dropdown-item {
 
 #section-page-blog .section-box {
     margin-bottom: 4rem;
+    max-width: 767px;
+    margin-right: 5vw; 
+
+    @media (max-width: 767px) {
+        margin-right: 0;
+    }
 }
 
 #section-page-blog .section-box img {

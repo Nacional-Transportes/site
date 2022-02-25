@@ -21,6 +21,7 @@ function enviarForm() {
         document.getElementById('passo01').style.display = "none";
         document.getElementById('passo02').style.display = "block";
         passo02 = 'active';
+        buttonPopup = 1;
         //alert(etapas)
     }
 
@@ -57,13 +58,14 @@ function enviarForm() {
 
     if (document.getElementById('tipotransporte').selectedIndex == 2) { // Se for moto
         if (document.getElementById('motomarcaValidacao').value == 0) { // Se NÃO estiver selecionado
-            MsgErro = MsgErro + 'Selecione as cilindradas da moto<br>';
-            foco="cilindradas";
+            validarCilindradas();
+            return false; 
         }
 
         Valor = document.getElementById('veiculovalorMoto').value;
         if (Valor.length <= 8) { // Se NÃO estiver digitado o valor corretamente
-            MsgErro = MsgErro + 'Digite o valor de veículo<br>';
+            validarValorMoto();
+            return false; 
         } else {
         document.getElementById('passo02').style.display = "none";
         document.getElementById('passo03').style.display = "block";
@@ -74,8 +76,8 @@ function enviarForm() {
 
     if (document.getElementById('tipotransporte').selectedIndex == 3) { // Se for outros
         if (document.getElementById('categoriaveiculoValidacao').value == 0) { // Se NÃO estiver selecionado
-            MsgErro = MsgErro + 'Selecione a categoria<br>';
-            foco="categoria";
+            validarCategoria();
+            return false; 
         } else {
         document.getElementById('passo02').style.display = "none";
         document.getElementById('passo03').style.display = "block";
@@ -85,15 +87,27 @@ function enviarForm() {
     }
 
     if (document.getElementById('tipotransporte').selectedIndex == 0) { // Se estiver selecionado o tipo de veiculo
-        validarTipoVeiculo();
-        return false;
+        if (buttonPopup==2) {
+            validarTipoVeiculo();
+            return false;
+        } else {            
+            //document.getElementById('popup').style.display = "none";
+            exibirPopUp('alertaPopUp');
+            return false;
+        }
     } 
 
-    document.getElementById("mensagemError").innerHTML = MsgErro;
+    //document.getElementById("mensagemError").innerHTML = MsgErro;
 
     if (document.getElementById('estadoorigem').value == 0) {
-        validarEstadoOrigem();
-        return false;
+        if (buttonPopup==2) {
+            validarEstadoOrigem();
+            return false;
+        } else { 
+            //document.getElementById('popup').style.display = "none";
+            exibirPopUp('alertaPopUp');
+            return false;
+        }
     }
 
     if (document.getElementById('cidadeorigem').value == 0) {

@@ -58,6 +58,24 @@ function validarValorVeiculo() {
     foco="valorveiculo";
 }
 
+function validarCilindradas() {        
+    MsgErro = MsgErro + 'Selecione a cilindrada da moto';
+    document.getElementById("mensagemError").innerHTML = MsgErro;        
+    foco="cilindradas";
+}
+
+function validarValorMoto() {        
+    MsgErro = MsgErro + 'Digite o valor da moto';
+    document.getElementById("mensagemError").innerHTML = MsgErro;        
+    foco="valorveiculomoto";
+}
+
+function validarCategoria() {        
+    MsgErro = MsgErro + 'Selecione a categoria';
+    document.getElementById("mensagemError").innerHTML = MsgErro;        
+    foco="categoria";
+}
+
 function validarEstadoOrigem() {
     MsgErro = MsgErro + "Selecione o estado de origem";
     document.getElementById("mensagemError").innerHTML = MsgErro;

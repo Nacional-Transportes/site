@@ -301,7 +301,6 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 .navbar-right a.link-tel:hover {
-  background: #507864;
   color: #ffbf1e;
 }
 @media (max-width: 567px) {
@@ -945,10 +944,10 @@ li.nav-item .dropdown-item {
 }
 
 #section-contato .section-box p a {
-  color: #507864;
+  color: #464655;
 }
 #section-contato .section-box p a:hover {
-  text-decoration: underline;
+  color: #507864;
 }
 
 #section-contato .section-box .form-contato input[type=submit] {
@@ -1112,7 +1111,7 @@ li.nav-item .dropdown-item {
   left: 10px;
   position: fixed;
   cursor: pointer;
-  background-image: url(https://nacionaltransportes.com/wp-content/uploads/2021/06/whatsapp-logo-1.png);
+  background-image: url(../images/whatsapp-logo.webp);
   border: 2px solid transparent;
   -webkit-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
   animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
@@ -1261,5 +1260,43 @@ li.nav-item .dropdown-item {
   body.font-lato, html.font-lato,
 .tawk-button-circle.tawk-button-large {
     display: none !important;
+  }
+}
+.box-redes.cotacao a {
+  color: #507864;
+  font-size: 42px;
+  margin-right: 1rem;
+}
+.box-redes.cotacao a:hover {
+  color: #ffbf1e;
+}
+
+.whatsapp-cotacao {
+  background: #507864;
+  padding: 12px 36px;
+  box-sizing: border-box;
+  border-radius: 17px;
+  margin-top: 4rem;
+  display: inline-block;
+  color: #ffbf1e;
+  font-size: 23px;
+  font-family: "Barlow", sans-serif;
+}
+.whatsapp-cotacao:hover {
+  background-color: #ffbf1e;
+  color: #507864;
+}
+@media (max-width: 295px) {
+  .whatsapp-cotacao {
+    font-size: 18px;
+  }
+}
+
+.whatsapp-cotacao img {
+  margin-right: 5px;
+}
+@media (max-width: 295px) {
+  .whatsapp-cotacao img {
+    width: 25px;
   }
 }/*# sourceMappingURL=theme.css.map */

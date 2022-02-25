@@ -9,6 +9,7 @@ function popUp(op) {
       if (foco=="marcaveiculo") { document.getElementById("veiculomarcaValidacao").focus(); }
       if (foco=="modeloveiculo") { document.getElementById("veiculomodeloValidacao").focus(); }
       if (foco=="valorveiculo") { document.getElementById("veiculovalor").focus(); }
+      if (foco=="valorveiculomoto") { document.getElementById("veiculovalorMoto").focus(); }
       if (foco=="cilindradas") { document.getElementById("motomarcaValidacao").focus(); }
       if (foco=="categoria") { document.getElementById("categoriaveiculoValidacao").focus(); }
       if (foco=="estadoorigem") { document.getElementById("estadoorigem").focus(); }

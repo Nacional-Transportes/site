@@ -72,7 +72,7 @@ function owlCarrossel() {
             0:{
                 items:1
             },
-            800:{
+            1200:{
                 items:2
             }
         }

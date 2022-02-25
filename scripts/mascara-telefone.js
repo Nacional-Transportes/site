@@ -19,7 +19,7 @@ function mtel(v) {
 //Tamanho máximo do caracter de telefone
 function tamanhoCaracterTelefone(field) {
   str = field.value;
-  if (str.length > 14) {
+  if (str.length > 15) {
     field.value = str.substring(0, str.length - 1);
   }
 }

@@ -127,13 +127,14 @@
         <!-- Section -->
         <section id="section-transportes" class="section">
             <div class="container">
-                <h1 class="title">Rastreamento de veículo</h1>
+                <h1 class="title">Acompanhe por aqui o status de transporte do seu veículo</h1>
 
                 <div class="row">
                     <article class="col-md-12">
                         <section class="section-box"> 
 
-                            <!-- Section -->
+                            <!--Main Rastreio --> 
+                            <!-- Section -->    
                             <section id="section-rastreamento" class="section">
 
                                 <p>Cotação Nº 500109 |  Modelo: RANGER CABINE DUPLA - FORD  |  Placa: DWP5421</p>
@@ -165,8 +166,28 @@
                                     </tr>                                        
                                 </table>
 
+                                <p class="paragraph">
+                                    Está tendo algum problema com seu transporte? Se sim, <a href="#form-rastreio"><b>clique aqui</b></a> e abra um chamado em nosso SAC.
+                                </p>
+
+                                <form id="form-rastreio" action="">
+                                    <div class="float left">
+                                        <label>Número do contrato</label>
+                                        <input class="form-control" type="text" name="contrato"  value="xxxxxxxxxxx" required />
+                                    </div>
+                                    <div class="float right">
+                                        <label>Placa do veículo</label>
+                                        <input class="form-control" type="text" name="placa"  value="XXX-9999" required />
+                                    </div>
+                                    <textarea class="form-control" name="mensagem" id="" rows="10" placeholder="Descreva neste campo o problema que está tendo com seu transporte.
+                                    "></textarea>
+                                    <input type="submit" name="enviarForm" value="Enviar" />
+                                </form>
+
                             </section>
-                            <!--/ Section -->
+                            <!--/ Section -->  
+
+                            <!--/ Main Rastreio --> 
 
                         </section>
                     </article>

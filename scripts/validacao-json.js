@@ -35,3 +35,60 @@ jQuery(document).ready(function ($) {
         //AlterouIndex();
     });
 });
+
+
+     
+jQuery(document).ready(function($) {
+    $('#estadoorigem').on('change', function(event) {
+        var loc = $(this).val();
+        var $cidade = $("#cidadeorigem");
+
+        if (loc != '') {
+            $.getJSON("https://nacional-transportes.github.io/site/estados/" + loc + ".json", function(data) {
+
+                var vals = [];
+                vals = data.cidades.split(",");
+
+                $cidade.empty();
+                $cidade.append("<option value=\"\">Selecione uma cidade</option>");
+
+                $.each(vals, function(index, value) {
+                    $cidade.append("<option value=\"" + value + "\">" + value + "</option>");
+                });
+            });
+        } else {
+            $cidade.empty();
+            $cidade.append("<option value=\"\">Selecione um estado</option>");
+        };
+
+        //AlterouIndex();
+    }); 
+});
+
+
+jQuery(document).ready(function($) {
+    $('#estadoentrega').on('change', function(event) {
+        var loc = $(this).val();
+        var $cidade = $("#cidadeentrega");
+
+        if (loc != '') {
+            $.getJSON("https://nacional-transportes.github.io/site/estados/" + loc + ".json", function(data) {
+
+                var vals = [];
+                vals = data.cidades.split(",");
+
+                $cidade.empty();
+                $cidade.append("<option value=\"\">Selecione uma cidade</option>");
+
+                $.each(vals, function(index, value) {
+                    $cidade.append("<option value=\"" + value + "\">" + value + "</option>");
+                });
+            });
+        } else {
+            $cidade.empty();
+            $cidade.append("<option value=\"\">Selecione um estado</option>");
+        };
+
+        //AlterouIndex();
+    }); 
+});

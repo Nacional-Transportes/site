@@ -424,7 +424,36 @@
                                   <h2><span>3. </span>Dados de Transporte</h2>
                                   <div class="label-float w33">
                                     <label>Estado de Origem</label>
-                                    <select name="estadoorigem" id="estadoorigem" required></select>
+                                    <select name="estadoorigem" id="estadoorigem" required>
+                                      <option value=""></option>
+                                      <option value="AC">AC</option>
+                                      <option value="AL">AL</option>
+                                      <option value="AM">AM</option>
+                                      <option value="AP">AP</option>
+                                      <option value="BA">BA</option>
+                                      <option value="CE">CE</option>
+                                      <option value="DF">DF</option>
+                                      <option value="ES">ES</option>
+                                      <option value="GO">GO</option>
+                                      <option value="MA">MA</option>
+                                      <option value="MG">MG</option>
+                                      <option value="MS">MS</option>
+                                      <option value="MT">MT</option>
+                                      <option value="PA">PA</option>
+                                      <option value="PB">PB</option>
+                                      <option value="PE">PE</option>
+                                      <option value="PI">PI</option>
+                                      <option value="PR">PR</option>
+                                      <option value="RJ">RJ</option>
+                                      <option value="RN">RN</option>
+                                      <option value="RO">RO</option>
+                                      <option value="RR">RR</option>
+                                      <option value="RS">RS</option>
+                                      <option value="SC">SC</option>
+                                      <option value="SE">SE</option>
+                                      <option value="SP">SP</option>
+                                      <option value="TO">TO</option>
+                                    </select>
                                   </div>
                                   <div class="label-float w33">
                                     <label>Cidade de Origem</label>
@@ -432,6 +461,7 @@
                                       <option value="">Selecione primeiro o estado</option>
                                     </select>
                                   </div>
+
                                   <div class="label-float w33">
                                     <label>Modo de Coleta</label>
                                     <input
@@ -450,7 +480,36 @@
                                 <div class="box-flex">
                                   <div class="label-float w33">
                                     <label>Estado de Destino</label>
-                                    <select name="estadoentrega" id="estadoentrega" required></select>
+                                    <select name="estadoentrega" id="estadoentrega" required>
+                                      <option value=""></option>
+                                      <option value="AC">AC</option>
+                                      <option value="AL">AL</option>
+                                      <option value="AM">AM</option>
+                                      <option value="AP">AP</option>
+                                      <option value="BA">BA</option>
+                                      <option value="CE">CE</option>
+                                      <option value="DF">DF</option>
+                                      <option value="ES">ES</option>
+                                      <option value="GO">GO</option>
+                                      <option value="MA">MA</option>
+                                      <option value="MG">MG</option>
+                                      <option value="MS">MS</option>
+                                      <option value="MT">MT</option>
+                                      <option value="PA">PA</option>
+                                      <option value="PB">PB</option>
+                                      <option value="PE">PE</option>
+                                      <option value="PI">PI</option>
+                                      <option value="PR">PR</option>
+                                      <option value="RJ">RJ</option>
+                                      <option value="RN">RN</option>
+                                      <option value="RO">RO</option>
+                                      <option value="RR">RR</option>
+                                      <option value="RS">RS</option>
+                                      <option value="SC">SC</option>
+                                      <option value="SE">SE</option>
+                                      <option value="SP">SP</option>
+                                      <option value="TO">TO</option>
+                                    </select>
                                   </div>
                                   <div class="label-float w33">
                                     <label>Cidade de Destino</label>
@@ -500,6 +559,7 @@
                                       id="datatransporte"
                                       placeholder=""
                                       max="2299-12-31"
+                                      readonly="true"
                                     />
                                   </div>
                                 </div>
@@ -634,8 +694,8 @@
     <script src="scripts/mascara-telefone.js"></script>
     <script src="scripts/valida-datalist.js?v=05"></script>
 
-    <script src="scripts/cidades-estados.js"></script>
-    <script src="scripts/cidades-estados-variaveis.js"></script>
+    <!-- <script src="scripts/cidades-estados.js"></script>
+    <script src="scripts/cidades-estados-variaveis.js"></script> -->
 
     <script src="scripts/opcoes-veiculos.js"></script>
     <script src="scripts/exibir-popup.js"></script>
